@@ -9,7 +9,7 @@ body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     line-height: 1.7;
     color: #2d3748;
-    background-color: #f7fafc;
+    background-color: #f5f3f0;
     font-size: 17px;
     font-weight: 400;
     letter-spacing: 0.01em;
@@ -49,8 +49,8 @@ body {
     justify-content: center;
     flex-shrink: 0;
     overflow: hidden;
-    border: 4px solid #E53E3E;
-    box-shadow: 0 6px 20px rgba(229, 62, 62, 0.4);
+    border: 4px solid #5dade2;
+    box-shadow: 0 6px 20px rgba(93, 173, 226, 0.3);
 }
 
 .profile-photo {
@@ -120,15 +120,15 @@ body {
 }
 
 .contact-item i {
-    color: #E53E3E;
+    color: #5dade2;
     width: 16px;
 }
 
 .enschede-highlight {
-    background: linear-gradient(135deg, rgba(229, 62, 62, 0.05), rgba(197, 48, 48, 0.1));
+    background: linear-gradient(135deg, rgba(93, 173, 226, 0.05), rgba(72, 160, 216, 0.1));
     padding: 0.75rem 1rem;
     border-radius: 8px;
-    border: 1px solid rgba(229, 62, 62, 0.2);
+    border: 1px solid rgba(93, 173, 226, 0.2);
     display: flex;
     align-items: center;
     gap: 0.75rem;
@@ -138,6 +138,30 @@ body {
     width: 24px;
     height: 24px;
     margin-left: 0.5rem;
+}
+
+.download-cv-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(135deg, #5dade2, #48a0d8);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(93, 173, 226, 0.3);
+}
+
+.download-cv-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(93, 173, 226, 0.4);
+}
+
+.download-cv-btn i {
+    font-size: 1.1rem;
 }
 
 /* Sections */
@@ -151,7 +175,7 @@ body {
     color: #1a202c;
     margin-bottom: 2rem;
     padding-bottom: 0.75rem;
-    border-bottom: 3px solid #E53E3E;
+    border-bottom: 3px solid #5dade2;
     display: inline-block;
     letter-spacing: -0.01em;
 }
@@ -171,12 +195,12 @@ body {
 }
 
 .motivation-card {
-    background: linear-gradient(135deg, #E53E3E 0%, #C53030 100%);
+    background: linear-gradient(135deg, #5dade2 0%, #48a0d8 100%);
     color: white;
     padding: 2rem;
     border-radius: 12px;
     margin-bottom: 1.5rem;
-    box-shadow: 0 8px 25px rgba(229, 62, 62, 0.15);
+    box-shadow: 0 8px 25px rgba(93, 173, 226, 0.25);
 }
 
 .motivation-card h3 {
@@ -223,13 +247,13 @@ body {
 }
 
 .procurement-item {
-    background: #f8fafc;
+    background: #faf9f7;
     border-radius: 12px;
     padding: 2rem;
     display: flex;
     gap: 1.5rem;
     align-items: flex-start;
-    border-left: 4px solid #E53E3E;
+    border-left: 4px solid #5dade2;
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
@@ -254,13 +278,13 @@ body {
 .procurement-item:hover {
     transform: translateY(-4px);
     box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
-    border-left-color: #C53030;
+    border-left-color: #48a0d8;
 }
 
 .procurement-icon {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, #E53E3E, #C53030);
+    background: linear-gradient(135deg, #5dade2, #48a0d8);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -323,7 +347,7 @@ body {
 }
 
 .skill-tag:hover {
-    background: #E53E3E;
+    background: #5dade2;
     color: white;
     transform: translateY(-1px);
 }
@@ -365,7 +389,7 @@ body {
     top: 1.5rem;
     width: 12px;
     height: 12px;
-    background: #E53E3E;
+    background: #5dade2;
     border-radius: 50%;
     border: 3px solid white;
     box-shadow: 0 0 0 3px #f7fafc;
@@ -373,7 +397,7 @@ body {
 
 .timeline-date {
     font-size: 0.9rem;
-    color: #E53E3E;
+    color: #5dade2;
     font-weight: 600;
     margin-bottom: 0.5rem;
 }
@@ -409,7 +433,7 @@ body {
     content: '▸';
     position: absolute;
     left: 0;
-    color: #E53E3E;
+    color: #5dade2;
     font-weight: bold;
 }
 
@@ -424,7 +448,7 @@ body {
     background: #f8fafc;
     padding: 2rem;
     border-radius: 8px;
-    border-left: 4px solid #E53E3E;
+    border-left: 4px solid #5dade2;
     transition: all 0.2s ease;
 }
 
@@ -442,7 +466,7 @@ body {
 }
 
 .project-company {
-    color: #E53E3E;
+    color: #5dade2;
     font-weight: 500;
     font-size: 0.9rem;
     margin-bottom: 1rem;
@@ -487,7 +511,7 @@ body {
 }
 
 .education-period {
-    color: #E53E3E;
+    color: #5dade2;
     font-size: 0.9rem;
     font-weight: 600;
 }
@@ -516,7 +540,7 @@ body {
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, #E53E3E, #C53030);
+    background: linear-gradient(90deg, #5dade2, #48a0d8);
     transform: scaleX(0);
     transition: transform 0.3s ease;
 }
@@ -541,7 +565,7 @@ body {
 .volunteer-icon {
     width: 50px;
     height: 50px;
-    background: linear-gradient(135deg, #E53E3E, #C53030);
+    background: linear-gradient(135deg, #5dade2, #48a0d8);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -562,7 +586,7 @@ body {
 }
 
 .volunteer-org {
-    color: #E53E3E;
+    color: #5dade2;
     font-weight: 500;
     font-size: 1rem;
     margin-bottom: 0.25rem;
@@ -616,7 +640,7 @@ body {
 }
 
 .skill-badge {
-    background: linear-gradient(135deg, #E53E3E, #C53030);
+    background: linear-gradient(135deg, #5dade2, #48a0d8);
     color: white;
     padding: 0.4rem 0.8rem;
     border-radius: 15px;
@@ -678,18 +702,18 @@ body {
 }
 
 .timeline-btn:hover {
-    border-color: #E53E3E;
-    color: #E53E3E;
+    border-color: #5dade2;
+    color: #5dade2;
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(229, 62, 62, 0.15);
+    box-shadow: 0 8px 20px rgba(93, 173, 226, 0.15);
 }
 
 .timeline-btn.active {
-    background: linear-gradient(135deg, #E53E3E, #C53030);
-    border-color: #E53E3E;
+    background: linear-gradient(135deg, #5dade2, #48a0d8);
+    border-color: #5dade2;
     color: white;
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(229, 62, 62, 0.3);
+    box-shadow: 0 8px 20px rgba(93, 173, 226, 0.3);
 }
 
 .timeline-btn i {
@@ -764,7 +788,7 @@ body {
 .activity-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, #E53E3E, #C53030);
+    background: linear-gradient(135deg, #5dade2, #48a0d8);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -1200,7 +1224,7 @@ body {
 
 .stat-item:hover {
     transform: translateY(-4px);
-    background: #E53E3E;
+    background: #5dade2;
     color: white;
 }
 
@@ -1211,7 +1235,7 @@ body {
 .stat-icon {
     width: 50px;
     height: 50px;
-    background: #E53E3E;
+    background: #5dade2;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -1240,7 +1264,7 @@ body {
 .stat-number {
     font-size: 2rem;
     font-weight: 700;
-    color: #E53E3E;
+    color: #5dade2;
     display: block;
     margin-bottom: 0.25rem;
 }
@@ -1313,7 +1337,7 @@ body {
 
 .form-header i {
     font-size: 2.5rem;
-    color: #E53E3E;
+    color: #5dade2;
     margin-bottom: 1rem;
 }
 
@@ -1369,9 +1393,9 @@ body {
 .form-group select:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #E53E3E;
+    border-color: #5dade2;
     background: white;
-    box-shadow: 0 0 0 3px rgba(229, 62, 62, 0.1);
+    box-shadow: 0 0 0 3px rgba(93, 173, 226, 0.1);
 }
 
 .form-group textarea {
@@ -1413,7 +1437,7 @@ body {
 }
 
 .submit-reference-btn {
-    background: linear-gradient(135deg, #E53E3E, #C53030);
+    background: linear-gradient(135deg, #5dade2, #48a0d8);
     color: white;
     border: none;
     padding: 1rem 2rem;
@@ -1427,12 +1451,12 @@ body {
     justify-content: center;
     gap: 0.75rem;
     margin-top: 1rem;
-    box-shadow: 0 4px 12px rgba(229, 62, 62, 0.3);
+    box-shadow: 0 4px 12px rgba(93, 173, 226, 0.3);
 }
 
 .submit-reference-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(229, 62, 62, 0.4);
+    box-shadow: 0 8px 24px rgba(93, 173, 226, 0.4);
 }
 
 .existing-references {
@@ -1539,7 +1563,7 @@ body {
 
 .language-bar {
     height: 100%;
-    background: linear-gradient(90deg, #E53E3E, #C53030);
+    background: linear-gradient(90deg, #5dade2, #48a0d8);
     border-radius: 4px;
     width: 0;
     transition: width 1.5s ease-in-out;

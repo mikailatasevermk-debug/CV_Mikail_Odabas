@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mikail Odabas - CV</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #5dade2;
+        }
+
+        h1 {
+            font-size: 32px;
+            color: #1a202c;
+            margin-bottom: 5px;
+        }
+
+        .title {
+            font-size: 18px;
+            color: #5dade2;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .contact {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .contact span {
+            margin: 0 10px;
+        }
+
+        h2 {
+            font-size: 20px;
+            color: #5dade2;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #5dade2;
+        }
+
+        .summary {
+            font-size: 15px;
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .job, .education-item, .project {
+            margin-bottom: 20px;
+        }
+
+        .job-header, .education-header, .project-header {
+            margin-bottom: 8px;
+        }
+
+        .job-title, .education-title, .project-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1a202c;
+        }
+
+        .company, .school, .project-company {
+            font-size: 14px;
+            color: #5dade2;
+            font-weight: 500;
+        }
+
+        .date {
+            font-size: 13px;
+            color: #666;
+            font-style: italic;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-top: 8px;
+        }
+
+        li {
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: #444;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .skill-category h3 {
+            font-size: 15px;
+            color: #1a202c;
+            margin-bottom: 8px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill-tag {
+            background: #e8f4f8;
+            color: #5dade2;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .languages {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .language {
+            font-size: 14px;
+            color: #444;
+        }
+
+        .core-competencies {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .competency {
+            font-size: 14px;
+            color: #444;
+            padding-left: 15px;
+            position: relative;
+        }
+
+        .competency:before {
+            content: "•";
+            color: #5dade2;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        @media print {
+            body {
+                padding: 20px;
+            }
+
+            .no-print {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Mikail Odabas</h1>
+        <p class="title">International Account Manager</p>
+        <div class="contact">
+            <span>📞 +31 6 83 77 77 80</span>
+            <span>✉ mikailodabas@hotmail.com</span>
+            <span>📍 Enschede, Netherlands</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Professional Summary</h2>
+        <p class="summary">
+            Results-driven international account manager with strong business development expertise and a passion for using AI to work smarter and faster. Skilled in building long-term international relationships, negotiating deals, and driving commercial growth. Combines empathy, analytical insight, and digital fluency to deliver efficient, customer-focused solutions across multiple markets.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Core Competencies</h2>
+        <div class="core-competencies">
+            <div class="competency">International Account Management</div>
+            <div class="competency">Business Development & Sales Strategy</div>
+            <div class="competency">Client Relationship Management</div>
+            <div class="competency">Negotiation & Contract Management</div>
+            <div class="competency">AI-Driven Efficiency & Smart Automation</div>
+            <div class="competency">CRM & Data-Driven Decision Making</div>
+            <div class="competency">Cross-Cultural Communication</div>
+            <div class="competency">Problem Solving & Strategic Thinking</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Professional Experience</h2>
+
+        <div class="job">
+            <div class="job-header">
+                <div class="job-title">International Account Manager</div>
+                <div class="company">Dipasa Europe B.V., Enschede</div>
+                <div class="date">November 2024 – Present</div>
+            </div>
+            <ul>
+                <li>Building and maintaining long-term international client relationships</li>
+                <li>Negotiating prices and creating tailored offers</li>
+                <li>Developing new business and entering new markets</li>
+                <li>Promoting innovations and introducing new products</li>
+                <li>Representing the company at fairs and presentations</li>
+                <li>Managing tenders and contracts</li>
+                <li>Using AI tools for research, analysis, and sales optimization</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div class="job-title">Account Manager</div>
+                <div class="company">Billy Security, Netherlands</div>
+                <div class="date">June 2023 – October 2024</div>
+            </div>
+            <ul>
+                <li>Managed leads and secured new contracts</li>
+                <li>Created collaboration proposals and negotiated pricing</li>
+                <li>Used AI tools to improve communication and efficiency</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div class="job-title">Personal Supervisor (BBL Trainee)</div>
+                <div class="company">RIBW Overijssel, Enschede</div>
+                <div class="date">May 2022 – June 2024</div>
+            </div>
+            <ul>
+                <li>Guided clients in protected living environments</li>
+                <li>Created SMART care plans and reports</li>
+                <li>Built partnerships with other care institutions</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div class="job-title">BCO Employee</div>
+                <div class="company">GGD Flevoland, Lelystad</div>
+                <div class="date">May 2020 – September 2022</div>
+            </div>
+            <ul>
+                <li>Communicated with COVID-19 cases and contacts</li>
+                <li>Conducted interviews and coordinated reports</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div class="job-title">Marketing & Communication Assistant</div>
+                <div class="company">Islamic Relief Netherlands, Amsterdam</div>
+                <div class="date">January 2019 – May 2020</div>
+            </div>
+            <ul>
+                <li>Managed external relationships and CRM records</li>
+                <li>Supported media and design projects</li>
+                <li>Helped execute national campaigns</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Education</h2>
+
+        <div class="education-item">
+            <div class="education-header">
+                <div class="education-title">Bachelor in International Business Management Studies</div>
+                <div class="school">Saxion University of Applied Sciences, Enschede</div>
+                <div class="date">2014 – 2018</div>
+            </div>
+        </div>
+
+        <div class="education-item">
+            <div class="education-header">
+                <div class="education-title">Junior Account Manager</div>
+                <div class="school">ROC van Twente, Almelo</div>
+                <div class="date">2012 – 2014</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Skills & Expertise</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Business & Sales</h3>
+                <div class="skills">
+                    <span class="skill-tag">Business Development</span>
+                    <span class="skill-tag">Sales Strategy</span>
+                    <span class="skill-tag">Client Relations</span>
+                    <span class="skill-tag">Problem Solving</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Digital & AI Skills</h3>
+                <div class="skills">
+                    <span class="skill-tag">ChatGPT & AI Tools</span>
+                    <span class="skill-tag">CRM (HubSpot)</span>
+                    <span class="skill-tag">Microsoft Office</span>
+                    <span class="skill-tag">Google Workspace</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Communication</h3>
+                <div class="skills">
+                    <span class="skill-tag">Presentations</span>
+                    <span class="skill-tag">Cross-Cultural</span>
+                    <span class="skill-tag">Empathetic</span>
+                    <span class="skill-tag">Strategic Thinking</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Creative & Technical</h3>
+                <div class="skills">
+                    <span class="skill-tag">Adobe Creative</span>
+                    <span class="skill-tag">Video Editing</span>
+                    <span class="skill-tag">Drone Operation</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Languages</h2>
+        <div class="languages">
+            <span class="language"><strong>Dutch:</strong> Native</span>
+            <span class="language"><strong>English:</strong> Fluent</span>
+            <span class="language"><strong>Turkish:</strong> Fluent</span>
+            <span class="language"><strong>Spanish:</strong> Intermediate</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Projects & Internships</h2>
+
+        <div class="project">
+            <div class="project-header">
+                <div class="project-title">International Digital Marketing Strategies (Thesis)</div>
+                <div class="project-company">Spillz BV</div>
+                <div class="date">September 2019 – June 2020</div>
+            </div>
+            <p style="font-size: 14px; margin-top: 5px; color: #444;">
+                Research on digital marketing strategies for SMEs in international markets. Internal & external analysis, online trends, competitive analysis and SWOT strategic analysis.
+            </p>
+        </div>
+
+        <div class="project">
+            <div class="project-header">
+                <div class="project-title">International Packaging Policy Internship</div>
+                <div class="project-company">Wood & Soul, Indonesia</div>
+                <div class="date">August 2017 – December 2018</div>
+            </div>
+            <p style="font-size: 14px; margin-top: 5px; color: #444;">
+                Advised on packaging policy and work processes. Created catalog for international tableware company. Customer relationship management and handling international quotations (incoterms).
+            </p>
+        </div>
+    </div>
+</body>
+</html>

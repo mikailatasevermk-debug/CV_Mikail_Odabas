@@ -199,7 +199,7 @@ document.addEventListener('DOMContentLoaded', function() {
             position: fixed;
             top: 20px;
             right: 20px;
-            background: #E53E3E;
+            background: #5dade2;
             color: white;
             border: none;
             padding: 12px 16px;
@@ -211,14 +211,14 @@ document.addEventListener('DOMContentLoaded', function() {
             z-index: 1000;
             transition: all 0.2s ease;
         `;
-        
+
         printButton.addEventListener('mouseenter', function() {
-            this.style.background = '#C53030';
+            this.style.background = '#48a0d8';
             this.style.transform = 'translateY(-1px)';
         });
-        
+
         printButton.addEventListener('mouseleave', function() {
-            this.style.background = '#E53E3E';
+            this.style.background = '#5dade2';
             this.style.transform = 'translateY(0)';
         });
         
