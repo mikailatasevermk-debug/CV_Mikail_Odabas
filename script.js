@@ -484,7 +484,6 @@ document.addEventListener('DOMContentLoaded', function() {
         addSkillTagInteractions();
         addContactInteractions();
         addParallaxEffect();
-        addPrintFunctionality();
         addSmoothScrolling();
         addDayTimelineInteractivity();
         addReferenceFormHandler();
@@ -496,13 +495,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Add resize handler for responsive interactions
     window.addEventListener('resize', function() {
-        const printButton = document.querySelector('button');
-        if (printButton) {
-            if (window.innerWidth < 768) {
-                printButton.style.display = 'none';
-            } else {
-                printButton.style.display = 'block';
-            }
-        }
+        // Removed print button functionality
     });
 });
