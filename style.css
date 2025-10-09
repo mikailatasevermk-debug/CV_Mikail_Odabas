@@ -17,7 +17,8 @@ body {
 
 /* Container */
 .container {
-    max-width: 900px;
+    max-width: 1400px;
+    width: 90%;
     margin: 0 auto;
     padding: 2rem;
     background: white;
@@ -25,6 +26,20 @@ body {
     border-radius: 12px;
     margin-top: 2rem;
     margin-bottom: 2rem;
+}
+
+/* Responsive container width */
+@media (min-width: 1600px) {
+    .container {
+        width: 85%;
+        max-width: 1600px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        width: 95%;
+    }
 }
 
 /* Header */
