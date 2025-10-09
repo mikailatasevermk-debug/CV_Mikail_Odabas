@@ -36,9 +36,9 @@
                         </div>
                     </div>
                     <div style="margin-top: 1.5rem;">
-                        <a href="cv-simple.html" target="_blank" class="download-cv-btn">
-                            <i class="fas fa-download"></i>
-                            <span>Download Simple CV</span>
+                        <a href="cv-simple.html" target="_blank" class="download-cv-btn" onclick="setTimeout(() => { const newWindow = window.open('cv-simple.html', '_blank'); setTimeout(() => { newWindow.print(); }, 500); }, 100); return false;">
+                            <i class="fas fa-file-pdf"></i>
+                            <span>Download CV as PDF</span>
                         </a>
                     </div>
                 </div>

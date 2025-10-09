@@ -175,10 +175,57 @@
             .no-print {
                 display: none;
             }
+
+            @page {
+                margin: 1.5cm;
+                size: A4;
+            }
+        }
+
+        .print-instructions {
+            background: #e8f4f8;
+            border: 2px solid #5dade2;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 20px 0;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .print-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #5dade2, #48a0d8);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 10px;
+            cursor: pointer;
+            border: none;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        .print-btn:hover {
+            background: linear-gradient(135deg, #48a0d8, #3a8fc9);
+        }
+
+        @media print {
+            .print-instructions {
+                display: none;
+            }
         }
     </style>
 </head>
 <body>
+    <div class="print-instructions no-print">
+        <p><strong>📄 Save as PDF:</strong> Click the button below or use <strong>Ctrl/Cmd + P</strong> → Select "Save as PDF" as the printer</p>
+        <button onclick="window.print()" class="print-btn">
+            <i class="fas fa-file-pdf"></i> Save as PDF
+        </button>
+    </div>
+
     <div class="header">
         <h1>Mikail Odabas</h1>
         <p class="title">International Account Manager</p>
