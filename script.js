@@ -87,7 +87,33 @@ const translations = {
         languageIntermediate: "Spanish (Intermediate)",
 
         // Success messages
-        successMessage: "Thank you for your recommendation! It is now displayed in the references section."
+        successMessage: "Thank you for your recommendation! It is now displayed in the references section.",
+
+        // Featured Projects
+        featuredProjects: "Featured Projects",
+        featuredProjectsSubtitle: "Explore some of the digital solutions and platforms I've developed",
+
+        // Project 1 - Renovibez
+        renovibezDesc: "Online renovation platform connecting homeowners with verified contractors in the Netherlands. Features AI-powered matching, instant quotes within 24 hours, and comprehensive project management tools.",
+        renovibezFeature1: "Contractor Verification System",
+        renovibezFeature2: "24-Hour Quote Delivery",
+        renovibezFeature3: "6 Renovation Categories",
+
+        // Project 2 - Hirezon
+        hirezonDesc: "AI-powered job search platform helping professionals accelerate their career journey. Features automated cover letter generation, application tracking, and data-driven insights serving 10,000+ job seekers.",
+        hirezonFeature1: "AI Cover Letter Generator",
+        hirezonFeature2: "Application Tracking Dashboard",
+        hirezonFeature3: "10,000+ Active Users",
+
+        // Project 3 - CV Website
+        cvWebsiteDesc: "Modern, interactive CV website showcasing professional experience and skills. Features bilingual support (EN/NL), dynamic content switching, PDF generation, and responsive design for all devices.",
+        cvWebsiteFeature1: "Bilingual Interface (EN/NL)",
+        cvWebsiteFeature2: "PDF Export Functionality",
+        cvWebsiteFeature3: "Interactive Timeline",
+
+        // Common
+        visitWebsite: "Visit Website",
+        youreHere: "You're Here!"
     },
     nl: {
         // Header
@@ -176,7 +202,33 @@ const translations = {
         languageIntermediate: "Spaans (Gemiddeld)",
 
         // Success messages
-        successMessage: "Bedankt voor je aanbeveling! Deze wordt nu getoond in de referenties sectie."
+        successMessage: "Bedankt voor je aanbeveling! Deze wordt nu getoond in de referenties sectie.",
+
+        // Featured Projects
+        featuredProjects: "Uitgelichte Projecten",
+        featuredProjectsSubtitle: "Ontdek enkele digitale oplossingen en platforms die ik heb ontwikkeld",
+
+        // Project 1 - Renovibez
+        renovibezDesc: "Online renovatieplatform dat huiseigenaren verbindt met geverifieerde aannemers in Nederland. Beschikt over AI-gestuurde matching, offertes binnen 24 uur en uitgebreide projectbeheertools.",
+        renovibezFeature1: "Verificatiesysteem voor Aannemers",
+        renovibezFeature2: "Offertes binnen 24 Uur",
+        renovibezFeature3: "6 Renovatiecategorieën",
+
+        // Project 2 - Hirezon
+        hirezonDesc: "AI-aangedreven vacatureplatform dat professionals helpt hun carrière te versnellen. Bevat geautomatiseerde motivatiebriefgeneratie, sollicitatietracking en data-gedreven inzichten voor meer dan 10.000 werkzoekenden.",
+        hirezonFeature1: "AI Motivatiebrief Generator",
+        hirezonFeature2: "Sollicitatie Tracking Dashboard",
+        hirezonFeature3: "10.000+ Actieve Gebruikers",
+
+        // Project 3 - CV Website
+        cvWebsiteDesc: "Moderne, interactieve CV-website die professionele ervaring en vaardigheden toont. Beschikt over tweetalige ondersteuning (EN/NL), dynamische inhoudswisseling, PDF-generatie en responsive design voor alle apparaten.",
+        cvWebsiteFeature1: "Tweetalige Interface (EN/NL)",
+        cvWebsiteFeature2: "PDF Export Functionaliteit",
+        cvWebsiteFeature3: "Interactieve Tijdlijn",
+
+        // Common
+        visitWebsite: "Bezoek Website",
+        youreHere: "Je bent hier!"
     }
 };
 
@@ -316,6 +368,45 @@ function updateTranslations() {
     if (languageNames[1]) languageNames[1].textContent = t.languageFluent1;
     if (languageNames[2]) languageNames[2].textContent = t.languageFluent2;
     if (languageNames[3]) languageNames[3].textContent = t.languageIntermediate;
+
+    // Featured Projects
+    const featuredProjectsSection = document.querySelector('.featured-projects-section');
+    if (featuredProjectsSection) {
+        featuredProjectsSection.querySelector('.section-title').textContent = t.featuredProjects;
+        featuredProjectsSection.querySelector('.section-subtitle').textContent = t.featuredProjectsSubtitle;
+
+        const projectCards = featuredProjectsSection.querySelectorAll('.featured-project-card');
+
+        // Renovibez
+        if (projectCards[0]) {
+            projectCards[0].querySelector('.project-description').textContent = t.renovibezDesc;
+            const renovibezFeatures = projectCards[0].querySelectorAll('.feature-item span');
+            if (renovibezFeatures[0]) renovibezFeatures[0].textContent = t.renovibezFeature1;
+            if (renovibezFeatures[1]) renovibezFeatures[1].textContent = t.renovibezFeature2;
+            if (renovibezFeatures[2]) renovibezFeatures[2].textContent = t.renovibezFeature3;
+            projectCards[0].querySelector('.project-link span').textContent = t.visitWebsite;
+        }
+
+        // Hirezon
+        if (projectCards[1]) {
+            projectCards[1].querySelector('.project-description').textContent = t.hirezonDesc;
+            const hirezonFeatures = projectCards[1].querySelectorAll('.feature-item span');
+            if (hirezonFeatures[0]) hirezonFeatures[0].textContent = t.hirezonFeature1;
+            if (hirezonFeatures[1]) hirezonFeatures[1].textContent = t.hirezonFeature2;
+            if (hirezonFeatures[2]) hirezonFeatures[2].textContent = t.hirezonFeature3;
+            projectCards[1].querySelector('.project-link span').textContent = t.visitWebsite;
+        }
+
+        // CV Website
+        if (projectCards[2]) {
+            projectCards[2].querySelector('.project-description').textContent = t.cvWebsiteDesc;
+            const cvFeatures = projectCards[2].querySelectorAll('.feature-item span');
+            if (cvFeatures[0]) cvFeatures[0].textContent = t.cvWebsiteFeature1;
+            if (cvFeatures[1]) cvFeatures[1].textContent = t.cvWebsiteFeature2;
+            if (cvFeatures[2]) cvFeatures[2].textContent = t.cvWebsiteFeature3;
+            projectCards[2].querySelector('.project-link span').textContent = t.youreHere;
+        }
+    }
 }
 
 // Wait for DOM to load
