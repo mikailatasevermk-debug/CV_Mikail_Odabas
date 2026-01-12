@@ -1,5 +1,335 @@
+// Translation data structure
+const translations = {
+    en: {
+        // Header
+        title: "International Account Manager",
+        downloadCV: "Download CV as PDF",
+
+        // Professional Summary
+        professionalSummary: "Professional Summary",
+        summaryTitle: "Results-Driven International Account Manager",
+        summaryText1: "I'm an international account manager who truly enjoys building long-lasting, sustainable relationships. I get my energy from creating win–win situations and connecting with people from all over the world. Thanks to my international experience, I understand and adapt easily to different cultures, which helps me build trust and meaningful collaborations.",
+        summaryText2: "I'm also passionate about <strong>using AI to work smarter and faster</strong> — combining empathy, analytical insight, and digital fluency to deliver customer-focused solutions that drive real growth. For me, success means helping others succeed too.",
+        valueTag1: "International Markets",
+        valueTag2: "AI-Driven Efficiency",
+        valueTag3: "Relationship Building",
+        valueTag4: "Business Growth",
+
+        // Core Competencies
+        coreCompetencies: "Core Competencies",
+        competency1Title: "International Account Management",
+        competency1Text: "Extensive experience in <strong>building and maintaining long-term international client relationships</strong>. Expert in cross-cultural communication and global business development.",
+        competency2Title: "Negotiation & Contract Management",
+        competency2Text: "Skilled in <strong>negotiating prices, creating tailored offers, and managing tenders</strong>. Experience with contract management and strategic deal-making.",
+        competency3Title: "AI-Driven Efficiency",
+        competency3Text: "Passionate about <strong>using AI tools for research, analysis, and sales optimization</strong>. Leveraging smart automation to work faster and deliver better results.",
+
+        // Skills & Expertise
+        skillsExpertise: "Skills & Expertise",
+        skillCategory1: "Business & Sales",
+        skillCategory2: "Communication",
+        skillCategory3: "Digital & AI Skills",
+        skillCategory4: "Creative & Technical",
+
+        // Professional Experience
+        professionalExperience: "Professional Experience",
+        present: "Present",
+
+        // Projects
+        projectsInternships: "Projects & Internships",
+
+        // Education
+        education: "Education",
+
+        // Volunteer Work
+        volunteerWork: "Volunteer Work & Community Engagement",
+        keyActivities: "Key Activities:",
+        contributions: "Contributions:",
+
+        // Day in the Life
+        dayInLife: "A Day in My Work Life",
+        daySubtitle: "Discover what a typical workday looks like as an international account manager - from first coffee to last email",
+        morning: "Morning",
+        midday: "Midday",
+        afternoon: "Afternoon",
+        evening: "Evening",
+
+        // References
+        references: "References & Recommendations",
+        referencesIntro: "Former colleagues and partners can share their experiences and recommendations about our collaboration below.",
+        shareExperience: "Share your experience",
+        shareExperienceSubtitle: "Have you worked with Mikail? Share your experience below.",
+        formName: "Name",
+        formPosition: "Position & Organization",
+        formEmail: "Email",
+        formPeriod: "Collaboration Period",
+        formRelation: "In what capacity did you work together?",
+        formSelect: "Select...",
+        formRelation1: "Direct Colleague",
+        formRelation2: "Supervisor",
+        formRelation3: "Team Member",
+        formRelation4: "Client",
+        formRelation5: "Supplier/Partner",
+        formRelation6: "Project Partner",
+        formRelation7: "Other",
+        formTestimonial: "Your recommendation",
+        formTestimonialPlaceholder: "Share your experience working with Mikail. What were his strengths? How did he contribute to the team/project?",
+        formRating: "Overall collaboration rating",
+        submitRecommendation: "Submit Recommendation",
+        receivedRecommendations: "Received Recommendations",
+        referencesPlaceholder: "Recommendations from colleagues will appear here once submitted.",
+
+        // Languages
+        languages: "Languages",
+        languageNative: "Dutch (Native)",
+        languageFluent1: "English (Fluent)",
+        languageFluent2: "Turkish (Fluent)",
+        languageIntermediate: "Spanish (Intermediate)",
+
+        // Success messages
+        successMessage: "Thank you for your recommendation! It is now displayed in the references section."
+    },
+    nl: {
+        // Header
+        title: "International Account Manager",
+        downloadCV: "Download CV als PDF",
+
+        // Professional Summary
+        professionalSummary: "Professionele Samenvatting",
+        summaryTitle: "Resultaatgerichte International Account Manager",
+        summaryText1: "Ik ben een international account manager die echt geniet van het opbouwen van duurzame, langdurige relaties. Ik haal mijn energie uit het creëren van win-winsituaties en het verbinden met mensen van over de hele wereld. Dankzij mijn internationale ervaring begrijp en pas ik me gemakkelijk aan verschillende culturen aan, wat me helpt vertrouwen en betekenisvolle samenwerkingen op te bouwen.",
+        summaryText2: "Ik ben ook gepassioneerd over <strong>het gebruik van AI om slimmer en sneller te werken</strong> — waarbij ik empathie, analytisch inzicht en digitale vaardigheden combineer om klantgerichte oplossingen te leveren die echte groei stimuleren. Voor mij betekent succes dat ik anderen help om ook te slagen.",
+        valueTag1: "Internationale Markten",
+        valueTag2: "AI-Gedreven Efficiëntie",
+        valueTag3: "Relatieopbouw",
+        valueTag4: "Bedrijfsgroei",
+
+        // Core Competencies
+        coreCompetencies: "Kerncompetenties",
+        competency1Title: "International Account Management",
+        competency1Text: "Uitgebreide ervaring in <strong>het opbouwen en onderhouden van langdurige internationale klantrelaties</strong>. Expert in interculturele communicatie en wereldwijde bedrijfsontwikkeling.",
+        competency2Title: "Onderhandeling & Contractbeheer",
+        competency2Text: "Bedreven in <strong>het onderhandelen over prijzen, het creëren van op maat gemaakte aanbiedingen en het beheren van aanbestedingen</strong>. Ervaring met contractbeheer en strategische dealmaking.",
+        competency3Title: "AI-Gedreven Efficiëntie",
+        competency3Text: "Gepassioneerd over <strong>het gebruik van AI-tools voor onderzoek, analyse en verkoopoptimalisatie</strong>. Gebruik maken van slimme automatisering om sneller te werken en betere resultaten te leveren.",
+
+        // Skills & Expertise
+        skillsExpertise: "Vaardigheden & Expertise",
+        skillCategory1: "Business & Sales",
+        skillCategory2: "Communicatie",
+        skillCategory3: "Digitale & AI Vaardigheden",
+        skillCategory4: "Creatief & Technisch",
+
+        // Professional Experience
+        professionalExperience: "Werkervaring",
+        present: "Heden",
+
+        // Projects
+        projectsInternships: "Projecten & Stages",
+
+        // Education
+        education: "Opleiding",
+
+        // Volunteer Work
+        volunteerWork: "Vrijwilligerswerk & Gemeenschapsbetrokkenheid",
+        keyActivities: "Belangrijkste Activiteiten:",
+        contributions: "Bijdragen:",
+
+        // Day in the Life
+        dayInLife: "Een Dag uit Mijn Werkleven",
+        daySubtitle: "Ontdek hoe een typische werkdag eruit ziet als international account manager - van eerste koffie tot laatste e-mail",
+        morning: "Ochtend",
+        midday: "Middag",
+        afternoon: "Namiddag",
+        evening: "Avond",
+
+        // References
+        references: "Referenties & Aanbevelingen",
+        referencesIntro: "Voormalige collega's en partners kunnen hieronder hun ervaringen en aanbevelingen over onze samenwerking delen.",
+        shareExperience: "Deel je ervaring",
+        shareExperienceSubtitle: "Heb je met Mikail samengewerkt? Deel hieronder je ervaring.",
+        formName: "Naam",
+        formPosition: "Functie & Organisatie",
+        formEmail: "E-mail",
+        formPeriod: "Samenwerkingsperiode",
+        formRelation: "In welke hoedanigheid hebben jullie samengewerkt?",
+        formSelect: "Selecteer...",
+        formRelation1: "Directe Collega",
+        formRelation2: "Leidinggevende",
+        formRelation3: "Teamlid",
+        formRelation4: "Klant",
+        formRelation5: "Leverancier/Partner",
+        formRelation6: "Projectpartner",
+        formRelation7: "Anders",
+        formTestimonial: "Jouw aanbeveling",
+        formTestimonialPlaceholder: "Deel je ervaring met Mikail. Wat waren zijn sterke punten? Hoe heeft hij bijgedragen aan het team/project?",
+        formRating: "Algemene samenwerkingsbeoordeling",
+        submitRecommendation: "Aanbeveling Versturen",
+        receivedRecommendations: "Ontvangen Aanbevelingen",
+        referencesPlaceholder: "Aanbevelingen van collega's verschijnen hier zodra ze zijn ingediend.",
+
+        // Languages
+        languages: "Talen",
+        languageNative: "Nederlands (Moedertaal)",
+        languageFluent1: "Engels (Vloeiend)",
+        languageFluent2: "Turks (Vloeiend)",
+        languageIntermediate: "Spaans (Gemiddeld)",
+
+        // Success messages
+        successMessage: "Bedankt voor je aanbeveling! Deze wordt nu getoond in de referenties sectie."
+    }
+};
+
+// Language switching functionality
+let currentLanguage = localStorage.getItem('preferredLanguage') || 'en';
+
+function setLanguage(lang) {
+    currentLanguage = lang;
+    localStorage.setItem('preferredLanguage', lang);
+
+    // Update HTML lang attribute
+    document.documentElement.lang = lang;
+
+    // Update all translatable elements
+    updateTranslations();
+
+    // Update active button state
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+    });
+}
+
+function updateTranslations() {
+    const t = translations[currentLanguage];
+
+    // Header
+    document.querySelector('.title').textContent = t.title;
+    document.querySelector('.download-cv-btn span').textContent = t.downloadCV;
+
+    // Professional Summary
+    document.querySelector('.intro-section .section-title').textContent = t.professionalSummary;
+    document.querySelector('.motivation-card h3').innerHTML = `<i class="fas fa-bullseye"></i> ${t.summaryTitle}`;
+    const motivationPs = document.querySelectorAll('.motivation-card p');
+    motivationPs[0].innerHTML = t.summaryText1;
+    if (motivationPs[1]) motivationPs[1].innerHTML = t.summaryText2;
+
+    const valueTags = document.querySelectorAll('.value-tag');
+    if (valueTags[0]) valueTags[0].innerHTML = `<i class="fas fa-globe"></i> ${t.valueTag1}`;
+    if (valueTags[1]) valueTags[1].innerHTML = `<i class="fas fa-robot"></i> ${t.valueTag2}`;
+    if (valueTags[2]) valueTags[2].innerHTML = `<i class="fas fa-handshake"></i> ${t.valueTag3}`;
+    if (valueTags[3]) valueTags[3].innerHTML = `<i class="fas fa-chart-line"></i> ${t.valueTag4}`;
+
+    // Core Competencies
+    document.querySelector('.procurement-focus-section .section-title').textContent = t.coreCompetencies;
+    const competencyTitles = document.querySelectorAll('.procurement-content h3');
+    const competencyTexts = document.querySelectorAll('.procurement-content p');
+    if (competencyTitles[0]) competencyTitles[0].textContent = t.competency1Title;
+    if (competencyTexts[0]) competencyTexts[0].innerHTML = t.competency1Text;
+    if (competencyTitles[1]) competencyTitles[1].textContent = t.competency2Title;
+    if (competencyTexts[1]) competencyTexts[1].innerHTML = t.competency2Text;
+    if (competencyTitles[2]) competencyTitles[2].textContent = t.competency3Title;
+    if (competencyTexts[2]) competencyTexts[2].innerHTML = t.competency3Text;
+
+    // Skills & Expertise
+    document.querySelector('.expertise-section .section-title').textContent = t.skillsExpertise;
+    const skillCategories = document.querySelectorAll('.skill-category h3');
+    if (skillCategories[0]) skillCategories[0].textContent = t.skillCategory1;
+    if (skillCategories[1]) skillCategories[1].textContent = t.skillCategory2;
+    if (skillCategories[2]) skillCategories[2].textContent = t.skillCategory3;
+    if (skillCategories[3]) skillCategories[3].textContent = t.skillCategory4;
+
+    // Professional Experience
+    document.querySelector('.experience-section .section-title').textContent = t.professionalExperience;
+    const presentTexts = document.querySelectorAll('.timeline-date');
+    presentTexts.forEach(dateEl => {
+        if (dateEl.textContent.includes('Present') || dateEl.textContent.includes('Heden')) {
+            dateEl.textContent = dateEl.textContent.replace('Present', t.present).replace('Heden', t.present);
+        }
+    });
+
+    // Projects
+    document.querySelector('.projects-section .section-title').textContent = t.projectsInternships;
+
+    // Education
+    document.querySelector('.education-section .section-title').textContent = t.education;
+
+    // Volunteer Work
+    document.querySelector('.volunteer-section .section-title').textContent = t.volunteerWork;
+    const keyActivitiesHeaders = document.querySelectorAll('.volunteer-achievements h4');
+    keyActivitiesHeaders.forEach(header => {
+        if (header.textContent.includes('Key Activities') || header.textContent.includes('Belangrijkste Activiteiten')) {
+            header.textContent = t.keyActivities;
+        } else if (header.textContent.includes('Contributions') || header.textContent.includes('Bijdragen')) {
+            header.textContent = t.contributions;
+        }
+    });
+
+    // Day in the Life
+    document.querySelector('.day-in-life-section .section-title').textContent = t.dayInLife;
+    document.querySelector('.day-in-life-section .section-subtitle').textContent = t.daySubtitle;
+    const timeButtons = document.querySelectorAll('.timeline-btn span:last-child');
+    if (timeButtons[0]) timeButtons[0].textContent = t.morning;
+    if (timeButtons[1]) timeButtons[1].textContent = t.midday;
+    if (timeButtons[2]) timeButtons[2].textContent = t.afternoon;
+    if (timeButtons[3]) timeButtons[3].textContent = t.evening;
+
+    // References
+    document.querySelector('.references-section .section-title').textContent = t.references;
+    document.querySelector('.references-intro').textContent = t.referencesIntro;
+    document.querySelector('.form-header h3').textContent = t.shareExperience;
+    document.querySelector('.form-header p').textContent = t.shareExperienceSubtitle;
+
+    // Form labels and placeholders
+    const formLabels = document.querySelectorAll('.reference-form label');
+    if (formLabels[0]) formLabels[0].textContent = `${t.formName} *`;
+    if (formLabels[1]) formLabels[1].textContent = `${t.formPosition} *`;
+    if (formLabels[2]) formLabels[2].textContent = t.formEmail;
+    if (formLabels[3]) formLabels[3].textContent = t.formPeriod;
+    if (formLabels[4]) formLabels[4].textContent = `${t.formRelation} *`;
+    if (formLabels[5]) formLabels[5].textContent = `${t.formTestimonial} *`;
+    if (formLabels[6]) formLabels[6].textContent = t.formRating;
+
+    // Form select options
+    const selectOptions = document.querySelectorAll('#refRelation option');
+    if (selectOptions[0]) selectOptions[0].textContent = t.formSelect;
+    if (selectOptions[1]) selectOptions[1].textContent = t.formRelation1;
+    if (selectOptions[2]) selectOptions[2].textContent = t.formRelation2;
+    if (selectOptions[3]) selectOptions[3].textContent = t.formRelation3;
+    if (selectOptions[4]) selectOptions[4].textContent = t.formRelation4;
+    if (selectOptions[5]) selectOptions[5].textContent = t.formRelation5;
+    if (selectOptions[6]) selectOptions[6].textContent = t.formRelation6;
+    if (selectOptions[7]) selectOptions[7].textContent = t.formRelation7;
+
+    document.getElementById('refTestimonial').placeholder = t.formTestimonialPlaceholder;
+    document.querySelector('.submit-reference-btn').innerHTML = `<i class="fas fa-paper-plane"></i> ${t.submitRecommendation}`;
+    document.querySelector('.existing-references h3').textContent = t.receivedRecommendations;
+
+    const referencesPlaceholder = document.querySelector('.reference-placeholder p');
+    if (referencesPlaceholder) {
+        referencesPlaceholder.textContent = t.referencesPlaceholder;
+    }
+
+    // Languages
+    document.querySelector('.languages-section .section-title').textContent = t.languages;
+    const languageNames = document.querySelectorAll('.language-name');
+    if (languageNames[0]) languageNames[0].textContent = t.languageNative;
+    if (languageNames[1]) languageNames[1].textContent = t.languageFluent1;
+    if (languageNames[2]) languageNames[2].textContent = t.languageFluent2;
+    if (languageNames[3]) languageNames[3].textContent = t.languageIntermediate;
+}
+
 // Wait for DOM to load
 document.addEventListener('DOMContentLoaded', function() {
+    // Initialize language from localStorage
+    setLanguage(currentLanguage);
+
+    // Add language switcher event listeners
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const lang = this.getAttribute('data-lang');
+            setLanguage(lang);
+        });
+    });
     
     // Animate language bars when they come into view
     function animateLanguageBars() {
@@ -354,9 +684,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 // Reset form
                 this.reset();
-                
+
                 // Show success message
-                showSuccessMessage('Bedankt voor je aanbeveling! Deze wordt nu getoond in de referenties sectie.');
+                showSuccessMessage(translations[currentLanguage].successMessage);
                 
                 // Scroll to references
                 document.getElementById('references-list').scrollIntoView({ 
