@@ -48,7 +48,7 @@
                         </div>
                     </div>
                     <div style="margin-top: 1.5rem;">
-                        <a href="cv-simple.html" target="_blank" class="download-cv-btn" onclick="setTimeout(() => { const newWindow = window.open('cv-simple.html', '_blank'); setTimeout(() => { newWindow.print(); }, 500); }, 100); return false;">
+                        <a href="#" class="download-cv-btn" onclick="const lang = localStorage.getItem('preferredLanguage') || 'en'; const url = 'cv-simple.html?lang=' + lang; const newWindow = window.open(url, '_blank'); setTimeout(() => { newWindow.print(); }, 500); return false;">
                             <i class="fas fa-file-pdf"></i>
                             <span>Download CV as PDF</span>
                         </a>

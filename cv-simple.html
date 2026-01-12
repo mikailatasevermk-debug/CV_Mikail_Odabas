@@ -220,15 +220,15 @@
 </head>
 <body>
     <div class="print-instructions no-print">
-        <p><strong>📄 Save as PDF:</strong> Click the button below or use <strong>Ctrl/Cmd + P</strong> → Select "Save as PDF" as the printer</p>
+        <p><strong>📄 <span data-translate="saveAsPdf">Save as PDF</span>:</strong> <span data-translate="printInstructions">Click the button below or use <strong>Ctrl/Cmd + P</strong> → Select "Save as PDF" as the printer</span></p>
         <button onclick="window.print()" class="print-btn">
-            <i class="fas fa-file-pdf"></i> Save as PDF
+            <i class="fas fa-file-pdf"></i> <span data-translate="saveAsPdfBtn">Save as PDF</span>
         </button>
     </div>
 
     <div class="header">
         <h1>Mikail Odabas</h1>
-        <p class="title">International Account Manager</p>
+        <p class="title" data-translate="jobTitle">International Account Manager</p>
         <div class="contact">
             <span>📞 +31 6 83 77 77 80</span>
             <span>✉ mikailodabas@hotmail.com</span>
@@ -237,17 +237,17 @@
     </div>
 
     <div class="section">
-        <h2>Professional Summary</h2>
-        <p class="summary">
+        <h2 data-translate="professionalSummary">Professional Summary</h2>
+        <p class="summary" data-translate="summaryText1">
             I'm an international account manager who truly enjoys building long-lasting, sustainable relationships. I get my energy from creating win–win situations and connecting with people from all over the world. Thanks to my international experience, I understand and adapt easily to different cultures, which helps me build trust and meaningful collaborations.
         </p>
-        <p class="summary" style="margin-top: 15px;">
+        <p class="summary" style="margin-top: 15px;" data-translate="summaryText2">
             I'm also passionate about using AI to work smarter and faster — combining empathy, analytical insight, and digital fluency to deliver customer-focused solutions that drive real growth. For me, success means helping others succeed too.
         </p>
     </div>
 
     <div class="section">
-        <h2>Core Competencies</h2>
+        <h2 data-translate="coreCompetencies">Core Competencies</h2>
         <div class="core-competencies">
             <div class="competency">International Account Management</div>
             <div class="competency">Business Development & Sales Strategy</div>
@@ -428,5 +428,86 @@
             </p>
         </div>
     </div>
+
+    <script>
+        // Get language from URL parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const lang = urlParams.get('lang') || 'en';
+
+        const translations = {
+            en: {
+                saveAsPdf: "Save as PDF",
+                printInstructions: 'Click the button below or use <strong>Ctrl/Cmd + P</strong> → Select "Save as PDF" as the printer',
+                saveAsPdfBtn: "Save as PDF",
+                jobTitle: "International Account Manager",
+                professionalSummary: "Professional Summary",
+                summaryText1: "I'm an international account manager who truly enjoys building long-lasting, sustainable relationships. I get my energy from creating win–win situations and connecting with people from all over the world. Thanks to my international experience, I understand and adapt easily to different cultures, which helps me build trust and meaningful collaborations.",
+                summaryText2: "I'm also passionate about using AI to work smarter and faster — combining empathy, analytical insight, and digital fluency to deliver customer-focused solutions that drive real growth. For me, success means helping others succeed too.",
+                coreCompetencies: "Core Competencies",
+                professionalExperience: "Professional Experience",
+                present: "Present",
+                education: "Education",
+                skillsExpertise: "Skills & Expertise",
+                languages: "Languages",
+                projectsInternships: "Projects & Internships"
+            },
+            nl: {
+                saveAsPdf: "Opslaan als PDF",
+                printInstructions: 'Klik op de knop hieronder of gebruik <strong>Ctrl/Cmd + P</strong> → Selecteer "Opslaan als PDF" als printer',
+                saveAsPdfBtn: "Opslaan als PDF",
+                jobTitle: "International Account Manager",
+                professionalSummary: "Professionele Samenvatting",
+                summaryText1: "Ik ben een international account manager die echt geniet van het opbouwen van duurzame, langdurige relaties. Ik haal mijn energie uit het creëren van win-winsituaties en het verbinden met mensen van over de hele wereld. Dankzij mijn internationale ervaring begrijp en pas ik me gemakkelijk aan verschillende culturen aan, wat me helpt vertrouwen en betekenisvolle samenwerkingen op te bouwen.",
+                summaryText2: "Ik ben ook gepassioneerd over het gebruik van AI om slimmer en sneller te werken — waarbij ik empathie, analytisch inzicht en digitale vaardigheden combineer om klantgerichte oplossingen te leveren die echte groei stimuleren. Voor mij betekent succes dat ik anderen help om ook te slagen.",
+                coreCompetencies: "Kerncompetenties",
+                professionalExperience: "Werkervaring",
+                present: "Heden",
+                education: "Opleiding",
+                skillsExpertise: "Vaardigheden & Expertise",
+                languages: "Talen",
+                projectsInternships: "Projecten & Stages"
+            }
+        };
+
+        // Apply translations
+        function applyTranslations() {
+            const t = translations[lang];
+
+            // Update elements with data-translate attribute
+            document.querySelectorAll('[data-translate]').forEach(element => {
+                const key = element.getAttribute('data-translate');
+                if (t[key]) {
+                    element.innerHTML = t[key];
+                }
+            });
+
+            // Update section headings by index
+            const h2Elements = document.querySelectorAll('h2');
+            if (h2Elements[0]) h2Elements[0].textContent = t.professionalSummary;
+            if (h2Elements[1]) h2Elements[1].textContent = t.coreCompetencies;
+            if (h2Elements[2]) h2Elements[2].textContent = t.professionalExperience;
+            if (h2Elements[3]) h2Elements[3].textContent = t.education;
+            if (h2Elements[4]) h2Elements[4].textContent = t.skillsExpertise;
+            if (h2Elements[5]) h2Elements[5].textContent = t.languages;
+            if (h2Elements[6]) h2Elements[6].textContent = t.projectsInternships;
+
+            // Update "Present" in dates
+            document.querySelectorAll('.date').forEach(dateEl => {
+                if (dateEl.textContent.includes('Present') || dateEl.textContent.includes('Heden')) {
+                    dateEl.textContent = dateEl.textContent.replace('Present', t.present).replace('Heden', t.present);
+                }
+            });
+
+            // Update HTML lang attribute
+            document.documentElement.lang = lang;
+        }
+
+        // Apply translations when DOM is loaded
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', applyTranslations);
+        } else {
+            applyTranslations();
+        }
+    </script>
 </body>
 </html>
