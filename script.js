@@ -113,7 +113,10 @@ const translations = {
 
         // Common
         visitWebsite: "Visit Website",
-        youreHere: "You're Here!"
+        youreHere: "You're Here!",
+
+        // Floating button
+        floatingDownloadCV: "Download CV"
     },
     nl: {
         // Header
@@ -228,7 +231,10 @@ const translations = {
 
         // Common
         visitWebsite: "Bezoek Website",
-        youreHere: "Je bent hier!"
+        youreHere: "Je bent hier!",
+
+        // Floating button
+        floatingDownloadCV: "Download CV"
     }
 };
 
@@ -406,6 +412,12 @@ function updateTranslations() {
             if (cvFeatures[2]) cvFeatures[2].textContent = t.cvWebsiteFeature3;
             projectCards[2].querySelector('.project-link span').textContent = t.youreHere;
         }
+    }
+
+    // Floating CV button
+    const floatingCvText = document.querySelector('.floating-cv-text');
+    if (floatingCvText) {
+        floatingCvText.textContent = t.floatingDownloadCV;
     }
 }
 
@@ -894,6 +906,28 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
+    // Add floating CV button functionality
+    function addFloatingCVButton() {
+        const floatingBtn = document.getElementById('floatingCvBtn');
+        if (!floatingBtn) return;
+
+        let lastScrollTop = 0;
+        const scrollThreshold = 400; // Show after scrolling 400px
+
+        window.addEventListener('scroll', function() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            // Show button after scrolling past threshold
+            if (scrollTop > scrollThreshold) {
+                floatingBtn.classList.add('visible');
+            } else {
+                floatingBtn.classList.remove('visible');
+            }
+
+            lastScrollTop = scrollTop;
+        });
+    }
+
     // Initialize all interactions
     function init() {
         addTypingAnimationCSS();
@@ -909,6 +943,7 @@ document.addEventListener('DOMContentLoaded', function() {
         addDayTimelineInteractivity();
         addReferenceFormHandler();
         addActivityCardInteractions();
+        addFloatingCVButton();
     }
 
     // Start the show

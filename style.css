@@ -95,6 +95,74 @@ body {
     }
 }
 
+/* Floating Download CV Button */
+.floating-cv-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    background: linear-gradient(135deg, #5dade2, #48a0d8);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    box-shadow: 0 4px 20px rgba(93, 173, 226, 0.4);
+    z-index: 999;
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateY(100px);
+    pointer-events: none;
+}
+
+.floating-cv-btn.visible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+}
+
+.floating-cv-btn:hover {
+    background: linear-gradient(135deg, #48a0d8, #3b91cc);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(93, 173, 226, 0.5);
+}
+
+.floating-cv-btn i {
+    font-size: 1.25rem;
+}
+
+.floating-cv-text {
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .floating-cv-btn {
+        bottom: 20px;
+        right: 20px;
+        padding: 0.875rem 1.25rem;
+        font-size: 0.85rem;
+    }
+
+    .floating-cv-text {
+        display: none;
+    }
+
+    .floating-cv-btn i {
+        font-size: 1.5rem;
+    }
+
+    .floating-cv-btn {
+        border-radius: 50%;
+        width: 56px;
+        height: 56px;
+        padding: 0;
+        justify-content: center;
+    }
+}
+
 /* Container */
 .container {
     max-width: 1400px;

@@ -21,6 +21,12 @@
         </button>
     </div>
 
+    <!-- Floating Download CV Button -->
+    <a href="#" class="floating-cv-btn" id="floatingCvBtn" onclick="const lang = localStorage.getItem('preferredLanguage') || 'en'; const url = 'cv-simple.html?lang=' + lang; const newWindow = window.open(url, '_blank'); setTimeout(() => { newWindow.print(); }, 500); return false;">
+        <i class="fas fa-file-pdf"></i>
+        <span class="floating-cv-text">Download CV</span>
+    </a>
+
     <div class="container">
         <!-- Header Section -->
         <header class="header">
