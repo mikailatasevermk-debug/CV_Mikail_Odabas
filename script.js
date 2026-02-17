@@ -36,20 +36,130 @@ const translations = {
         skillCategory5: "Technical Background",
         skillCategory6: "Entrepreneurial",
 
+        // Skill tags
+        skillTags: [
+            ["Business Development", "Sales Strategy", "Client Relationship Mgmt", "Negotiation", "Contract Management"],
+            ["Claude AI / ChatGPT", "AI Product Demos", "SaaS Sales Cycles", "Technical Discovery", "Solution Selling"],
+            ["Presentation Skills", "Cross-Cultural Comms", "Stakeholder Management", "Strategic Thinking"],
+            ["CRM (HubSpot, Salesforce)", "Microsoft Office / Google", "Adobe Creative Cloud", "Video Editing"],
+            ["React / Node.js", "React Native (Mobile)", "REST APIs", "Git / GitHub", "Vercel / Railway"],
+            ["Product Development", "B2B E-commerce", "MVP Building", "Market Validation"]
+        ],
+
         // Professional Experience
         professionalExperience: "Professional Experience",
         present: "Present",
 
+        // Job 1 - Dipasa
+        job1Title: "International Account Manager",
+        job1Company: "Dipasa Europe B.V. • Enschede, Netherlands",
+        job1Date: "Nov 2024 – Dec 2025",
+        job1Tasks: [
+            "Building and maintaining long-term international client relationships",
+            "Negotiating prices and creating tailored offers and price calculations",
+            "Developing new business and entering new markets",
+            "Conducting market analysis and reporting on price trends, competitors, and new opportunities",
+            "Running targeted email campaigns to existing clients and prospects",
+            "Managing sales pipeline and forecasting via CRM",
+            "Onboarding new clients — contracts, logistics, and first orders",
+            "Representing the company at trade shows and following up on leads",
+            "Implementing cross-sell and upsell strategies for existing accounts",
+            "Delivering quarterly sales reports and performance reviews",
+            "Managing tenders and contracts",
+            "Using AI tools for research, analysis, and sales optimization"
+        ],
+
+        // Job 2 - Billy Security
+        job2Title: "Account Manager",
+        job2Company: "Billy Security • Netherlands",
+        job2Date: "Jun 2023 – Oct 2024",
+        job2Tasks: [
+            "Managed leads and secured new contracts through cold outreach campaigns (email & phone)",
+            "Created collaboration proposals, negotiated pricing, and followed up on quotes",
+            "Delivered sales presentations and product demos to prospective clients",
+            "Built and maintained sales pipeline in CRM",
+            "Handled client onboarding and after-sales support",
+            "Used AI tools to improve communication and efficiency"
+        ],
+
+        // Job 3 - RIBW
+        job3Title: "Personal Supervisor (BBL Trainee)",
+        job3Company: "RIBW Overijssel • Enschede",
+        job3Date: "May 2022 – Jun 2024",
+        job3Tasks: [
+            "Guided clients in protected living environments",
+            "Created SMART care plans and reports",
+            "Built partnerships with other care institutions"
+        ],
+
+        // Job 4 - GGD
+        job4Title: "BCO Employee",
+        job4Company: "GGD Flevoland • Lelystad",
+        job4Date: "May 2020 – Sep 2022",
+        job4Tasks: [
+            "Communicated with COVID-19 cases and contacts",
+            "Conducted interviews and coordinated reports",
+            "Data entry and reporting in national registration systems",
+            "Provided information and guidance to contacts on health protocols"
+        ],
+
+        // Job 5 - Islamic Relief
+        job5Title: "Marketing & Communication Assistant",
+        job5Company: "Islamic Relief Netherlands • Amsterdam",
+        job5Date: "Jan 2019 – May 2020",
+        job5Tasks: [
+            "Managed external relationships and CRM donor database",
+            "Ran email marketing campaigns for donor acquisition and retention",
+            "Social media management and content planning",
+            "Donor database management and segmentation",
+            "Supported media and design projects",
+            "Coordinated events and helped execute national campaigns"
+        ],
+
         // Projects
         projectsInternships: "Projects & Internships",
+        project1Title: "International Digital Marketing Strategies (Thesis)",
+        project1Company: "Spillz BV • Sep 2019 – Jun 2020",
+        project1Desc: "Research on digital marketing strategies for SMEs in international markets. Internal & external analysis, online trends, competitive analysis and SWOT strategic analysis.",
+        project2Title: "International Packaging Policy Internship",
+        project2Company: "Wood & Soul, Indonesia • Aug 2017 – Dec 2018",
+        project2Desc: "Advised on packaging policy and work processes. Created catalog for international tableware company. Customer relationship management and handling international quotations (incoterms).",
 
         // Education
         education: "Education",
+        edu1Title: "Bachelor in International Business Management Studies",
+        edu1School: "Saxion University of Applied Sciences, Enschede",
+        edu1Period: "2014 – 2018",
+        edu2Title: "Junior Account Manager",
+        edu2School: "ROC van Twente, Almelo",
+        edu2Period: "2012 – 2014",
 
         // Volunteer Work
         volunteerWork: "Volunteer Work & Community Engagement",
         keyActivities: "Key Activities:",
         contributions: "Contributions:",
+        volunteer1Title: "Chairman/Vice-Chairman",
+        volunteer1Org: "Turkish Youth Association",
+        volunteer1Period: "June 2012 - Present • 13+ years",
+        volunteer1Desc: "Leadership role in organizing educational activities for the Turkish community in the Netherlands. Focus on youth work and community building.",
+        volunteer1Tasks: [
+            "Physical activities: sports and recreation",
+            "Educational programs: values, norms and social themes",
+            "Social cohesion: movie nights, board games, community activities",
+            "PDCA methodology: planning, executing, evaluating and adjusting activities"
+        ],
+        volunteer1Skills: ["Leadership", "Project Management", "Community Work", "PDCA Cycle"],
+        volunteer2Title: "Education Advisory Volunteer",
+        volunteer2Org: "Ministry of Education, Culture and Science",
+        volunteer2Period: "January 2017 - April 2017 • 4 months",
+        volunteer2Desc: "Invited by the ministry to contribute to improving the transition between vocational and higher education, aimed at reducing dropout rates.",
+        volunteer2Tasks: [
+            "Developing ideas for more effective transitions between education levels",
+            "Creating awareness about higher education teaching methodologies",
+            "Strategies for increased competitiveness within vocational education",
+            "Collaboration with diverse stakeholders in education"
+        ],
+        volunteer2Skills: ["Policy Advice", "Education Innovation", "Stakeholder Engagement", "Government Collaboration"],
 
         // Day in the Life
         dayInLife: "A Day in My Work Life",
@@ -159,20 +269,130 @@ const translations = {
         skillCategory5: "Technische Achtergrond",
         skillCategory6: "Ondernemerschap",
 
+        // Skill tags
+        skillTags: [
+            ["Business Development", "Verkoopstrategie", "Klantrelatiebeheer", "Onderhandeling", "Contractbeheer"],
+            ["Claude AI / ChatGPT", "AI Productdemo's", "SaaS Verkoopcycli", "Technische Discovery", "Solution Selling"],
+            ["Presentatievaardigheden", "Interculturele Comm.", "Stakeholder Management", "Strategisch Denken"],
+            ["CRM (HubSpot, Salesforce)", "Microsoft Office / Google", "Adobe Creative Cloud", "Video Editing"],
+            ["React / Node.js", "React Native (Mobiel)", "REST APIs", "Git / GitHub", "Vercel / Railway"],
+            ["Productontwikkeling", "B2B E-commerce", "MVP Bouwen", "Marktvalidatie"]
+        ],
+
         // Professional Experience
         professionalExperience: "Werkervaring",
         present: "Heden",
 
+        // Job 1 - Dipasa
+        job1Title: "International Account Manager",
+        job1Company: "Dipasa Europe B.V. • Enschede, Nederland",
+        job1Date: "Nov 2024 – Dec 2025",
+        job1Tasks: [
+            "Opbouwen en onderhouden van langdurige internationale klantrelaties",
+            "Onderhandelen over prijzen en opstellen van op maat gemaakte offertes en prijscalculaties",
+            "Ontwikkelen van nieuwe business en betreden van nieuwe markten",
+            "Uitvoeren van marktanalyses en rapporteren over prijstrends, concurrenten en nieuwe kansen",
+            "Uitvoeren van gerichte e-mailcampagnes naar bestaande klanten en prospects",
+            "Beheren van sales pipeline en forecasting via CRM",
+            "Onboarding van nieuwe klanten — contracten, logistiek en eerste orders",
+            "Vertegenwoordigen van het bedrijf op beurzen en opvolgen van leads",
+            "Implementeren van cross-sell en upsell strategieën voor bestaande accounts",
+            "Opstellen van kwartaalrapportages en sales performance reviews",
+            "Beheren van aanbestedingen en contracten",
+            "Gebruik van AI-tools voor onderzoek, analyse en verkoopoptimalisatie"
+        ],
+
+        // Job 2 - Billy Security
+        job2Title: "Account Manager",
+        job2Company: "Billy Security • Nederland",
+        job2Date: "Jun 2023 – Okt 2024",
+        job2Tasks: [
+            "Beheren van leads en binnenhalen van nieuwe contracten via cold outreach campagnes (e-mail & telefoon)",
+            "Opstellen van samenwerkingsvoorstellen, onderhandelen over prijzen en opvolgen van offertes",
+            "Geven van verkooppresentaties en productdemo's aan potentiële klanten",
+            "Opbouwen en bijhouden van sales pipeline in CRM",
+            "Verzorgen van klant onboarding en after-sales support",
+            "Gebruik van AI-tools om communicatie en efficiëntie te verbeteren"
+        ],
+
+        // Job 3 - RIBW
+        job3Title: "Persoonlijk Begeleider (BBL Stagiair)",
+        job3Company: "RIBW Overijssel • Enschede",
+        job3Date: "Mei 2022 – Jun 2024",
+        job3Tasks: [
+            "Begeleiden van cliënten in beschermde woonvormen",
+            "Opstellen van SMART-zorgplannen en rapportages",
+            "Opbouwen van samenwerkingen met andere zorginstellingen"
+        ],
+
+        // Job 4 - GGD
+        job4Title: "BCO Medewerker",
+        job4Company: "GGD Flevoland • Lelystad",
+        job4Date: "Mei 2020 – Sep 2022",
+        job4Tasks: [
+            "Communiceren met COVID-19 gevallen en contacten",
+            "Uitvoeren van interviews en coördineren van rapportages",
+            "Data-invoer en rapportage in landelijke registratiesystemen",
+            "Voorlichting en begeleiding van contacten over gezondheidsprotocollen"
+        ],
+
+        // Job 5 - Islamic Relief
+        job5Title: "Marketing & Communicatie Assistent",
+        job5Company: "Islamic Relief Nederland • Amsterdam",
+        job5Date: "Jan 2019 – Mei 2020",
+        job5Tasks: [
+            "Beheren van externe relaties en CRM donateurdatabase",
+            "Uitvoeren van e-mailmarketingcampagnes voor donateurswerving en -behoud",
+            "Social media beheer en contentplanning",
+            "Donateursdatabase beheer en segmentatie",
+            "Ondersteunen van media- en designprojecten",
+            "Coördineren van evenementen en uitvoeren van nationale campagnes"
+        ],
+
         // Projects
         projectsInternships: "Projecten & Stages",
+        project1Title: "Internationale Digitale Marketingstrategieën (Scriptie)",
+        project1Company: "Spillz BV • Sep 2019 – Jun 2020",
+        project1Desc: "Onderzoek naar digitale marketingstrategieën voor MKB in internationale markten. Interne & externe analyse, online trends, concurrentieanalyse en SWOT strategische analyse.",
+        project2Title: "Internationale Verpakkingsbeleid Stage",
+        project2Company: "Wood & Soul, Indonesië • Aug 2017 – Dec 2018",
+        project2Desc: "Advies over verpakkingsbeleid en werkprocessen. Catalogus gecreëerd voor internationaal serviesbedrijf. Klantrelatiebeheer en afhandeling van internationale offertes (incoterms).",
 
         // Education
         education: "Opleiding",
+        edu1Title: "Bachelor International Business Management Studies",
+        edu1School: "Saxion Hogeschool, Enschede",
+        edu1Period: "2014 – 2018",
+        edu2Title: "Junior Account Manager",
+        edu2School: "ROC van Twente, Almelo",
+        edu2Period: "2012 – 2014",
 
         // Volunteer Work
         volunteerWork: "Vrijwilligerswerk & Gemeenschapsbetrokkenheid",
         keyActivities: "Belangrijkste Activiteiten:",
         contributions: "Bijdragen:",
+        volunteer1Title: "Voorzitter/Vicevoorzitter",
+        volunteer1Org: "Turkse Jongerenvereniging",
+        volunteer1Period: "Juni 2012 - Heden • 13+ jaar",
+        volunteer1Desc: "Leiderschapsrol bij het organiseren van educatieve activiteiten voor de Turkse gemeenschap in Nederland. Focus op jongerenwerk en gemeenschapsopbouw.",
+        volunteer1Tasks: [
+            "Fysieke activiteiten: sport en recreatie",
+            "Educatieve programma's: waarden, normen en maatschappelijke thema's",
+            "Sociale cohesie: filmavonden, bordspellen, gemeenschapsactiviteiten",
+            "PDCA-methodiek: plannen, uitvoeren, evalueren en bijsturen van activiteiten"
+        ],
+        volunteer1Skills: ["Leiderschap", "Projectmanagement", "Gemeenschapswerk", "PDCA Cyclus"],
+        volunteer2Title: "Vrijwilliger Onderwijsadvies",
+        volunteer2Org: "Ministerie van Onderwijs, Cultuur en Wetenschap",
+        volunteer2Period: "Januari 2017 - April 2017 • 4 maanden",
+        volunteer2Desc: "Uitgenodigd door het ministerie om bij te dragen aan het verbeteren van de doorstroom tussen mbo en hbo, gericht op het verminderen van uitval.",
+        volunteer2Tasks: [
+            "Ontwikkelen van ideeën voor effectievere overgangen tussen onderwijsniveaus",
+            "Bewustwording creëren over onderwijsmethodieken in het hoger onderwijs",
+            "Strategieën voor verhoogde competitiviteit binnen het beroepsonderwijs",
+            "Samenwerking met diverse belanghebbenden in het onderwijs"
+        ],
+        volunteer2Skills: ["Beleidsadvies", "Onderwijsinnovatie", "Stakeholder Engagement", "Overheidsrelaties"],
 
         // Day in the Life
         dayInLife: "Een Dag uit Mijn Werkleven",
@@ -282,55 +502,134 @@ function updateTranslations() {
     if (motivationPs[1]) motivationPs[1].innerHTML = t.summaryText2;
 
     const valueTags = document.querySelectorAll('.value-tag');
-    if (valueTags[0]) valueTags[0].innerHTML = `<i class="fas fa-globe"></i> ${t.valueTag1}`;
-    if (valueTags[1]) valueTags[1].innerHTML = `<i class="fas fa-robot"></i> ${t.valueTag2}`;
-    if (valueTags[2]) valueTags[2].innerHTML = `<i class="fas fa-handshake"></i> ${t.valueTag3}`;
-    if (valueTags[3]) valueTags[3].innerHTML = `<i class="fas fa-chart-line"></i> ${t.valueTag4}`;
+    const valueTagIcons = ['fa-handshake', 'fa-robot', 'fa-globe', 'fa-chart-line', 'fa-code'];
+    const valueTagKeys = [t.valueTag1, t.valueTag2, t.valueTag3, t.valueTag4, t.valueTag5];
+    valueTags.forEach((tag, i) => {
+        if (valueTagKeys[i]) tag.innerHTML = `<i class="fas ${valueTagIcons[i]}"></i> ${valueTagKeys[i]}`;
+    });
 
     // Core Competencies
     document.querySelector('.procurement-focus-section .section-title').textContent = t.coreCompetencies;
     const competencyTitles = document.querySelectorAll('.procurement-content h3');
     const competencyTexts = document.querySelectorAll('.procurement-content p');
-    if (competencyTitles[0]) competencyTitles[0].textContent = t.competency1Title;
-    if (competencyTexts[0]) competencyTexts[0].innerHTML = t.competency1Text;
-    if (competencyTitles[1]) competencyTitles[1].textContent = t.competency2Title;
-    if (competencyTexts[1]) competencyTexts[1].innerHTML = t.competency2Text;
-    if (competencyTitles[2]) competencyTitles[2].textContent = t.competency3Title;
-    if (competencyTexts[2]) competencyTexts[2].innerHTML = t.competency3Text;
+    const compTitleKeys = [t.competency1Title, t.competency2Title, t.competency3Title, t.competency4Title];
+    const compTextKeys = [t.competency1Text, t.competency2Text, t.competency3Text, t.competency4Text];
+    compTitleKeys.forEach((title, i) => {
+        if (competencyTitles[i] && title) competencyTitles[i].textContent = title;
+        if (competencyTexts[i] && compTextKeys[i]) competencyTexts[i].innerHTML = compTextKeys[i];
+    });
 
     // Skills & Expertise
     document.querySelector('.expertise-section .section-title').textContent = t.skillsExpertise;
     const skillCategories = document.querySelectorAll('.skill-category h3');
-    if (skillCategories[0]) skillCategories[0].textContent = t.skillCategory1;
-    if (skillCategories[1]) skillCategories[1].textContent = t.skillCategory2;
-    if (skillCategories[2]) skillCategories[2].textContent = t.skillCategory3;
-    if (skillCategories[3]) skillCategories[3].textContent = t.skillCategory4;
+    const skillCatKeys = [t.skillCategory1, t.skillCategory2, t.skillCategory3, t.skillCategory4, t.skillCategory5, t.skillCategory6];
+    skillCatKeys.forEach((cat, i) => {
+        if (skillCategories[i] && cat) skillCategories[i].textContent = cat;
+    });
+
+    // Skill tags
+    if (t.skillTags) {
+        const skillCategoryDivs = document.querySelectorAll('.skill-category');
+        skillCategoryDivs.forEach((catDiv, catIndex) => {
+            if (t.skillTags[catIndex]) {
+                const tags = catDiv.querySelectorAll('.skill-tag');
+                tags.forEach((tag, tagIndex) => {
+                    if (t.skillTags[catIndex][tagIndex]) tag.textContent = t.skillTags[catIndex][tagIndex];
+                });
+            }
+        });
+    }
 
     // Professional Experience
     document.querySelector('.experience-section .section-title').textContent = t.professionalExperience;
-    const presentTexts = document.querySelectorAll('.timeline-date');
-    presentTexts.forEach(dateEl => {
-        if (dateEl.textContent.includes('Present') || dateEl.textContent.includes('Heden')) {
-            dateEl.textContent = dateEl.textContent.replace('Present', t.present).replace('Heden', t.present);
+    const timelineItems = document.querySelectorAll('.timeline-item');
+    const jobData = [
+        { title: t.job1Title, company: t.job1Company, date: t.job1Date, tasks: t.job1Tasks },
+        { title: t.job2Title, company: t.job2Company, date: t.job2Date, tasks: t.job2Tasks },
+        { title: t.job3Title, company: t.job3Company, date: t.job3Date, tasks: t.job3Tasks },
+        { title: t.job4Title, company: t.job4Company, date: t.job4Date, tasks: t.job4Tasks },
+        { title: t.job5Title, company: t.job5Company, date: t.job5Date, tasks: t.job5Tasks }
+    ];
+    timelineItems.forEach((item, i) => {
+        if (jobData[i]) {
+            const titleEl = item.querySelector('.job-title');
+            const companyEl = item.querySelector('.company');
+            const dateEl = item.querySelector('.timeline-date');
+            const taskEls = item.querySelectorAll('.job-description li');
+            if (titleEl) titleEl.textContent = jobData[i].title;
+            if (companyEl) companyEl.textContent = jobData[i].company;
+            if (dateEl) dateEl.textContent = jobData[i].date;
+            if (jobData[i].tasks) {
+                // Rebuild the list if task count differs
+                const ul = item.querySelector('.job-description');
+                if (ul && jobData[i].tasks.length !== taskEls.length) {
+                    ul.innerHTML = jobData[i].tasks.map(task => `<li>${task}</li>`).join('');
+                } else {
+                    taskEls.forEach((li, j) => {
+                        if (jobData[i].tasks[j]) li.textContent = jobData[i].tasks[j];
+                    });
+                }
+            }
         }
     });
 
-    // Projects
+    // Projects & Internships
     document.querySelector('.projects-section .section-title').textContent = t.projectsInternships;
+    const projectCards = document.querySelectorAll('.projects-grid .project-card');
+    if (projectCards[0]) {
+        projectCards[0].querySelector('h3').textContent = t.project1Title;
+        projectCards[0].querySelector('.project-company').textContent = t.project1Company;
+        projectCards[0].querySelector('.project-description').textContent = t.project1Desc;
+    }
+    if (projectCards[1]) {
+        projectCards[1].querySelector('h3').textContent = t.project2Title;
+        projectCards[1].querySelector('.project-company').textContent = t.project2Company;
+        projectCards[1].querySelector('.project-description').textContent = t.project2Desc;
+    }
 
     // Education
     document.querySelector('.education-section .section-title').textContent = t.education;
+    const eduItems = document.querySelectorAll('.education-item');
+    if (eduItems[0]) {
+        eduItems[0].querySelector('h3').textContent = t.edu1Title;
+        eduItems[0].querySelector('.education-school').textContent = t.edu1School;
+        eduItems[0].querySelector('.education-period').textContent = t.edu1Period;
+    }
+    if (eduItems[1]) {
+        eduItems[1].querySelector('h3').textContent = t.edu2Title;
+        eduItems[1].querySelector('.education-school').textContent = t.edu2School;
+        eduItems[1].querySelector('.education-period').textContent = t.edu2Period;
+    }
 
     // Volunteer Work
     document.querySelector('.volunteer-section .section-title').textContent = t.volunteerWork;
-    const keyActivitiesHeaders = document.querySelectorAll('.volunteer-achievements h4');
-    keyActivitiesHeaders.forEach(header => {
-        if (header.textContent.includes('Key Activities') || header.textContent.includes('Belangrijkste Activiteiten')) {
-            header.textContent = t.keyActivities;
-        } else if (header.textContent.includes('Contributions') || header.textContent.includes('Bijdragen')) {
-            header.textContent = t.contributions;
-        }
-    });
+    const volunteerCards = document.querySelectorAll('.volunteer-card');
+    if (volunteerCards[0]) {
+        volunteerCards[0].querySelector('.volunteer-title h3').textContent = t.volunteer1Title;
+        volunteerCards[0].querySelector('.volunteer-org').textContent = t.volunteer1Org;
+        volunteerCards[0].querySelector('.volunteer-period').textContent = t.volunteer1Period;
+        const desc0 = volunteerCards[0].querySelector('.volunteer-description > p');
+        if (desc0) desc0.textContent = t.volunteer1Desc;
+        const h4_0 = volunteerCards[0].querySelector('.volunteer-achievements h4');
+        if (h4_0) h4_0.textContent = t.keyActivities;
+        const tasks0 = volunteerCards[0].querySelectorAll('.volunteer-achievements li');
+        if (t.volunteer1Tasks) tasks0.forEach((li, j) => { if (t.volunteer1Tasks[j]) li.textContent = t.volunteer1Tasks[j]; });
+        const skills0 = volunteerCards[0].querySelectorAll('.skill-badge');
+        if (t.volunteer1Skills) skills0.forEach((badge, j) => { if (t.volunteer1Skills[j]) badge.textContent = t.volunteer1Skills[j]; });
+    }
+    if (volunteerCards[1]) {
+        volunteerCards[1].querySelector('.volunteer-title h3').textContent = t.volunteer2Title;
+        volunteerCards[1].querySelector('.volunteer-org').textContent = t.volunteer2Org;
+        volunteerCards[1].querySelector('.volunteer-period').textContent = t.volunteer2Period;
+        const desc1 = volunteerCards[1].querySelector('.volunteer-description > p');
+        if (desc1) desc1.textContent = t.volunteer2Desc;
+        const h4_1 = volunteerCards[1].querySelector('.volunteer-achievements h4');
+        if (h4_1) h4_1.textContent = t.contributions;
+        const tasks1 = volunteerCards[1].querySelectorAll('.volunteer-achievements li');
+        if (t.volunteer2Tasks) tasks1.forEach((li, j) => { if (t.volunteer2Tasks[j]) li.textContent = t.volunteer2Tasks[j]; });
+        const skills1 = volunteerCards[1].querySelectorAll('.skill-badge');
+        if (t.volunteer2Skills) skills1.forEach((badge, j) => { if (t.volunteer2Skills[j]) badge.textContent = t.volunteer2Skills[j]; });
+    }
 
     // Day in the Life
     document.querySelector('.day-in-life-section .section-title').textContent = t.dayInLife;
