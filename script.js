@@ -2,18 +2,19 @@
 const translations = {
     en: {
         // Header
-        title: "International Account Manager",
+        title: "Account Manager | Tech Sales & AI",
         downloadCV: "Download CV as PDF",
 
         // Professional Summary
         professionalSummary: "Professional Summary",
-        summaryTitle: "Results-Driven International Account Manager",
-        summaryText1: "I'm an international account manager who truly enjoys building long-lasting, sustainable relationships. I get my energy from creating win–win situations and connecting with people from all over the world. Thanks to my international experience, I understand and adapt easily to different cultures, which helps me build trust and meaningful collaborations.",
-        summaryText2: "I'm also passionate about <strong>using AI to work smarter and faster</strong> — combining empathy, analytical insight, and digital fluency to deliver customer-focused solutions that drive real growth. For me, success means helping others succeed too.",
-        valueTag1: "International Markets",
-        valueTag2: "AI-Driven Efficiency",
-        valueTag3: "Relationship Building",
-        valueTag4: "Business Growth",
+        summaryTitle: "Account Manager with a Passion for Tech & AI",
+        summaryText1: "I'm an account manager who thrives on building long-lasting, sustainable relationships. I get my energy from creating win–win situations and connecting with people from all over the world. Thanks to my international experience, I understand and adapt easily to different cultures, which helps me build trust and meaningful collaborations.",
+        summaryText2: "What sets me apart is that I don't just sell technology — <strong>I understand and build it</strong>. From AI-powered platforms to SaaS products, I speak both the language of business and tech. This makes me uniquely effective at translating complex solutions into real value for clients. I'm looking to grow in the tech industry where I can combine my commercial skills with my technical fluency.",
+        valueTag1: "Relationship Building",
+        valueTag2: "AI & Tech Sales",
+        valueTag3: "International Markets",
+        valueTag4: "Business Development",
+        valueTag5: "Technical Fluency",
 
         // Core Competencies
         coreCompetencies: "Core Competencies",
@@ -21,15 +22,19 @@ const translations = {
         competency1Text: "Extensive experience in <strong>building and maintaining long-term international client relationships</strong>. Expert in cross-cultural communication and global business development.",
         competency2Title: "Negotiation & Contract Management",
         competency2Text: "Skilled in <strong>negotiating prices, creating tailored offers, and managing tenders</strong>. Experience with contract management and strategic deal-making.",
-        competency3Title: "AI-Driven Efficiency",
-        competency3Text: "Passionate about <strong>using AI tools for research, analysis, and sales optimization</strong>. Leveraging smart automation to work faster and deliver better results.",
+        competency3Title: "AI & Tech Sales",
+        competency3Text: "Passionate about <strong>selling and implementing AI-driven solutions</strong>. Unique ability to understand the technology deeply, demo products effectively, and translate technical features into business value for clients.",
+        competency4Title: "Technical Fluency",
+        competency4Text: "Hands-on experience <strong>building web platforms, mobile apps, and SaaS products</strong>. This technical background enables me to speak the language of developers, product teams, and technical decision-makers.",
 
         // Skills & Expertise
         skillsExpertise: "Skills & Expertise",
-        skillCategory1: "Business & Sales",
-        skillCategory2: "Communication",
-        skillCategory3: "Digital & AI Skills",
-        skillCategory4: "Creative & Technical",
+        skillCategory1: "Sales & Account Management",
+        skillCategory2: "AI & SaaS Knowledge",
+        skillCategory3: "Communication",
+        skillCategory4: "Tools & Platforms",
+        skillCategory5: "Technical Background",
+        skillCategory6: "Entrepreneurial",
 
         // Professional Experience
         professionalExperience: "Professional Experience",
@@ -94,16 +99,16 @@ const translations = {
         featuredProjectsSubtitle: "Explore some of the digital solutions and platforms I've developed",
 
         // Project 1 - Renovibez
-        renovibezDesc: "Online renovation platform connecting homeowners with verified contractors in the Netherlands. Features AI-powered matching, instant quotes within 24 hours, and comprehensive project management tools.",
+        renovibezDesc: "Online renovation platform connecting homeowners with verified contractors in the Netherlands. Features AI-powered matching, instant quotes within 24 hours, and comprehensive project management tools. Currently in production phase.",
         renovibezFeature1: "Contractor Verification System",
         renovibezFeature2: "24-Hour Quote Delivery",
         renovibezFeature3: "6 Renovation Categories",
 
         // Project 2 - Hirezon
-        hirezonDesc: "AI-powered job search platform helping professionals accelerate their career journey. Features automated cover letter generation, application tracking, and data-driven insights serving 10,000+ job seekers.",
+        hirezonDesc: "AI-powered job search platform with scalable infrastructure designed for high-volume users. Features automated cover letter generation, application tracking, and data-driven insights. Currently in beta version while finalizing payment terms.",
         hirezonFeature1: "AI Cover Letter Generator",
         hirezonFeature2: "Application Tracking Dashboard",
-        hirezonFeature3: "10,000+ Active Users",
+        hirezonFeature3: "Beta Version - Payment Integration",
 
         // Project 3 - CV Website
         cvWebsiteDesc: "Modern, interactive CV website showcasing professional experience and skills. Features bilingual support (EN/NL), dynamic content switching, PDF generation, and responsive design for all devices.",
@@ -120,18 +125,19 @@ const translations = {
     },
     nl: {
         // Header
-        title: "International Account Manager",
+        title: "Account Manager | Tech Sales & AI",
         downloadCV: "Download CV als PDF",
 
         // Professional Summary
         professionalSummary: "Professionele Samenvatting",
-        summaryTitle: "Resultaatgerichte International Account Manager",
-        summaryText1: "Ik ben een international account manager die echt geniet van het opbouwen van duurzame, langdurige relaties. Ik haal mijn energie uit het creëren van win-winsituaties en het verbinden met mensen van over de hele wereld. Dankzij mijn internationale ervaring begrijp en pas ik me gemakkelijk aan verschillende culturen aan, wat me helpt vertrouwen en betekenisvolle samenwerkingen op te bouwen.",
-        summaryText2: "Ik ben ook gepassioneerd over <strong>het gebruik van AI om slimmer en sneller te werken</strong> — waarbij ik empathie, analytisch inzicht en digitale vaardigheden combineer om klantgerichte oplossingen te leveren die echte groei stimuleren. Voor mij betekent succes dat ik anderen help om ook te slagen.",
-        valueTag1: "Internationale Markten",
-        valueTag2: "AI-Gedreven Efficiëntie",
-        valueTag3: "Relatieopbouw",
-        valueTag4: "Bedrijfsgroei",
+        summaryTitle: "Account Manager met een Passie voor Tech & AI",
+        summaryText1: "Ik ben een account manager die energie haalt uit het opbouwen van duurzame, langdurige relaties. Ik haal mijn motivatie uit het creëren van win-winsituaties en het verbinden met mensen van over de hele wereld. Dankzij mijn internationale ervaring begrijp en pas ik me gemakkelijk aan verschillende culturen aan, wat me helpt vertrouwen en betekenisvolle samenwerkingen op te bouwen.",
+        summaryText2: "Wat mij onderscheidt is dat ik technologie niet alleen verkoop — <strong>ik begrijp en bouw het ook</strong>. Van AI-aangedreven platforms tot SaaS-producten, ik spreek zowel de taal van business als tech. Dit maakt mij uniek effectief in het vertalen van complexe oplossingen naar echte waarde voor klanten. Ik wil groeien in de tech-industrie waar ik mijn commerciële vaardigheden kan combineren met mijn technische kennis.",
+        valueTag1: "Relatieopbouw",
+        valueTag2: "AI & Tech Sales",
+        valueTag3: "Internationale Markten",
+        valueTag4: "Business Development",
+        valueTag5: "Technische Kennis",
 
         // Core Competencies
         coreCompetencies: "Kerncompetenties",
@@ -139,15 +145,19 @@ const translations = {
         competency1Text: "Uitgebreide ervaring in <strong>het opbouwen en onderhouden van langdurige internationale klantrelaties</strong>. Expert in interculturele communicatie en wereldwijde bedrijfsontwikkeling.",
         competency2Title: "Onderhandeling & Contractbeheer",
         competency2Text: "Bedreven in <strong>het onderhandelen over prijzen, het creëren van op maat gemaakte aanbiedingen en het beheren van aanbestedingen</strong>. Ervaring met contractbeheer en strategische dealmaking.",
-        competency3Title: "AI-Gedreven Efficiëntie",
-        competency3Text: "Gepassioneerd over <strong>het gebruik van AI-tools voor onderzoek, analyse en verkoopoptimalisatie</strong>. Gebruik maken van slimme automatisering om sneller te werken en betere resultaten te leveren.",
+        competency3Title: "AI & Tech Sales",
+        competency3Text: "Gepassioneerd over <strong>het verkopen en implementeren van AI-gedreven oplossingen</strong>. Uniek vermogen om technologie diepgaand te begrijpen, producten effectief te demonstreren en technische features te vertalen naar zakelijke waarde voor klanten.",
+        competency4Title: "Technische Kennis",
+        competency4Text: "Hands-on ervaring met <strong>het bouwen van webplatforms, mobiele apps en SaaS-producten</strong>. Deze technische achtergrond stelt mij in staat om de taal te spreken van developers, productteams en technische besluitvormers.",
 
         // Skills & Expertise
         skillsExpertise: "Vaardigheden & Expertise",
-        skillCategory1: "Business & Sales",
-        skillCategory2: "Communicatie",
-        skillCategory3: "Digitale & AI Vaardigheden",
-        skillCategory4: "Creatief & Technisch",
+        skillCategory1: "Sales & Account Management",
+        skillCategory2: "AI & SaaS Kennis",
+        skillCategory3: "Communicatie",
+        skillCategory4: "Tools & Platforms",
+        skillCategory5: "Technische Achtergrond",
+        skillCategory6: "Ondernemerschap",
 
         // Professional Experience
         professionalExperience: "Werkervaring",
@@ -212,16 +222,16 @@ const translations = {
         featuredProjectsSubtitle: "Ontdek enkele digitale oplossingen en platforms die ik heb ontwikkeld",
 
         // Project 1 - Renovibez
-        renovibezDesc: "Online renovatieplatform dat huiseigenaren verbindt met geverifieerde aannemers in Nederland. Beschikt over AI-gestuurde matching, offertes binnen 24 uur en uitgebreide projectbeheertools.",
+        renovibezDesc: "Online renovatieplatform dat huiseigenaren verbindt met geverifieerde aannemers in Nederland. Beschikt over AI-gestuurde matching, offertes binnen 24 uur en uitgebreide projectbeheertools. Momenteel in productiefase.",
         renovibezFeature1: "Verificatiesysteem voor Aannemers",
         renovibezFeature2: "Offertes binnen 24 Uur",
         renovibezFeature3: "6 Renovatiecategorieën",
 
         // Project 2 - Hirezon
-        hirezonDesc: "AI-aangedreven vacatureplatform dat professionals helpt hun carrière te versnellen. Bevat geautomatiseerde motivatiebriefgeneratie, sollicitatietracking en data-gedreven inzichten voor meer dan 10.000 werkzoekenden.",
+        hirezonDesc: "AI-aangedreven vacatureplatform met schaalbare infrastructuur ontworpen voor grote aantallen gebruikers. Bevat geautomatiseerde motivatiebriefgeneratie, sollicitatietracking en data-gedreven inzichten. Momenteel in bètaversie tijdens het afronden van betalingsvoorwaarden.",
         hirezonFeature1: "AI Motivatiebrief Generator",
         hirezonFeature2: "Sollicitatie Tracking Dashboard",
-        hirezonFeature3: "10.000+ Actieve Gebruikers",
+        hirezonFeature3: "Bètaversie - Betalingsintegratie",
 
         // Project 3 - CV Website
         cvWebsiteDesc: "Moderne, interactieve CV-website die professionele ervaring en vaardigheden toont. Beschikt over tweetalige ondersteuning (EN/NL), dynamische inhoudswisseling, PDF-generatie en responsive design voor alle apparaten.",
