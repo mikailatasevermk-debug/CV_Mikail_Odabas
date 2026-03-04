@@ -215,10 +215,10 @@ const translations = {
         renovibezFeature3: "6 Renovation Categories",
 
         // Project 2 - Hirezon
-        hirezonDesc: "AI-powered job search platform built as a hands-on learning project to train AI skills and explore full-stack development. Features automated cover letter generation, application tracking, and data-driven insights. Built to deepen understanding of AI capabilities, APIs, and modern platform architecture.",
+        hirezonDesc: "AI-powered job search platform currently in development. Features automated cover letter generation, application tracking, and data-driven insights. Built hands-on to grow AI and full-stack development skills — currently in beta while finalizing payment integration before launch.",
         hirezonFeature1: "AI Cover Letter Generator",
         hirezonFeature2: "Application Tracking Dashboard",
-        hirezonFeature3: "AI Learning & Experimentation Project",
+        hirezonFeature3: "Beta — Finalizing Payment Integration",
 
         // Project 3 - CV Website
         cvWebsiteDesc: "Modern, interactive CV website showcasing professional experience and skills. Features bilingual support (EN/NL), dynamic content switching, PDF generation, and responsive design for all devices.",
@@ -448,10 +448,10 @@ const translations = {
         renovibezFeature3: "6 Renovatiecategorieën",
 
         // Project 2 - Hirezon
-        hirezonDesc: "AI-aangedreven vacatureplatform gebouwd als hands-on leerproject om AI-vaardigheden te trainen en full-stack development te verkennen. Bevat geautomatiseerde motivatiebriefgeneratie, sollicitatietracking en data-gedreven inzichten. Gebouwd om AI-mogelijkheden, APIs en moderne platformarchitectuur beter te begrijpen.",
+        hirezonDesc: "AI-aangedreven vacatureplatform momenteel in ontwikkeling. Bevat geautomatiseerde motivatiebriefgeneratie, sollicitatietracking en data-gedreven inzichten. Hands-on gebouwd om AI- en full-stack vaardigheden te ontwikkelen — momenteel in bèta terwijl de betalingsintegratie wordt afgerond voor de lancering.",
         hirezonFeature1: "AI Motivatiebrief Generator",
         hirezonFeature2: "Sollicitatie Tracking Dashboard",
-        hirezonFeature3: "AI Leer- & Experimenteerproject",
+        hirezonFeature3: "Bèta — Betalingsintegratie wordt afgerond",
 
         // Project 3 - CV Website
         cvWebsiteDesc: "Moderne, interactieve CV-website die professionele ervaring en vaardigheden toont. Beschikt over tweetalige ondersteuning (EN/NL), dynamische inhoudswisseling, PDF-generatie en responsive design voor alle apparaten.",
