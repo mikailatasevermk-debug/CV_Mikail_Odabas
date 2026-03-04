@@ -9,9 +9,9 @@ const translations = {
         professionalSummary: "Professional Summary",
         summaryTitle: "Account Manager with a Passion for Tech & AI",
         summaryText1: "I'm an account manager who thrives on building long-lasting, sustainable relationships. I get my energy from creating win–win situations and connecting with people from all over the world. Thanks to my international experience, I understand and adapt easily to different cultures, which helps me build trust and meaningful collaborations.",
-        summaryText2: "What sets me apart is that I don't just sell technology — <strong>I understand and build it</strong>. From AI-powered platforms to SaaS products, I speak both the language of business and tech. This makes me uniquely effective at translating complex solutions into real value for clients. I'm looking to grow in the tech industry where I can combine my commercial skills with my technical fluency.",
+        summaryText2: "What sets me apart is my hands-on curiosity for technology — <strong>I actively build with it</strong>. I've been developing platforms and experimenting with AI to deepen my understanding of modern tech, from APIs and full-stack development to AI integrations and debugging. This gives me a genuine technical perspective that complements my commercial background. I'm looking to grow in the tech industry where I can bridge business understanding with real technical skills.",
         valueTag1: "Relationship Building",
-        valueTag2: "AI & Tech Sales",
+        valueTag2: "AI & Platform Building",
         valueTag3: "International Markets",
         valueTag4: "Business Development",
         valueTag5: "Technical Fluency",
@@ -22,15 +22,15 @@ const translations = {
         competency1Text: "Extensive experience in <strong>building and maintaining long-term international client relationships</strong>. Expert in cross-cultural communication and global business development.",
         competency2Title: "Negotiation & Contract Management",
         competency2Text: "Skilled in <strong>negotiating prices, creating tailored offers, and managing tenders</strong>. Experience with contract management and strategic deal-making.",
-        competency3Title: "AI & Tech Sales",
-        competency3Text: "Passionate about <strong>selling and implementing AI-driven solutions</strong>. Unique ability to understand the technology deeply, demo products effectively, and translate technical features into business value for clients.",
+        competency3Title: "AI & Platform Development",
+        competency3Text: "Passionate about <strong>building and experimenting with AI-powered platforms</strong>. Hands-on experience developing and iterating on AI tools, fixing bugs, and exploring how modern AI technologies work — from APIs to full-stack applications.",
         competency4Title: "Technical Fluency",
-        competency4Text: "Hands-on experience <strong>building web platforms, mobile apps, and SaaS products</strong>. This technical background enables me to speak the language of developers, product teams, and technical decision-makers.",
+        competency4Text: "Hands-on experience <strong>building web platforms, mobile apps, and AI-powered tools</strong>. This technical background enables me to speak the language of developers, product teams, and technical decision-makers.",
 
         // Skills & Expertise
         skillsExpertise: "Skills & Expertise",
         skillCategory1: "Sales & Account Management",
-        skillCategory2: "AI & SaaS Knowledge",
+        skillCategory2: "AI & Platform Development",
         skillCategory3: "Communication",
         skillCategory4: "Tools & Platforms",
         skillCategory5: "Technical Background",
@@ -39,7 +39,7 @@ const translations = {
         // Skill tags
         skillTags: [
             ["Business Development", "Sales Strategy", "Client Relationship Mgmt", "Negotiation", "Contract Management"],
-            ["Claude AI / ChatGPT", "AI Product Demos", "SaaS Sales Cycles", "Technical Discovery", "Solution Selling"],
+            ["Claude AI / ChatGPT", "AI Platform Building", "Bug Fixing & Debugging", "Technical Discovery", "API Integration"],
             ["Presentation Skills", "Cross-Cultural Comms", "Stakeholder Management", "Strategic Thinking"],
             ["CRM (HubSpot, Salesforce)", "Microsoft Office / Google", "Adobe Creative Cloud", "Video Editing"],
             ["React / Node.js", "React Native (Mobile)", "REST APIs", "Git / GitHub", "Vercel / Railway"],
@@ -215,10 +215,10 @@ const translations = {
         renovibezFeature3: "6 Renovation Categories",
 
         // Project 2 - Hirezon
-        hirezonDesc: "AI-powered job search platform with scalable infrastructure designed for high-volume users. Features automated cover letter generation, application tracking, and data-driven insights. Currently in beta version while finalizing payment terms.",
+        hirezonDesc: "AI-powered job search platform built as a hands-on learning project to train AI skills and explore full-stack development. Features automated cover letter generation, application tracking, and data-driven insights. Built to deepen understanding of AI capabilities, APIs, and modern platform architecture.",
         hirezonFeature1: "AI Cover Letter Generator",
         hirezonFeature2: "Application Tracking Dashboard",
-        hirezonFeature3: "Beta Version - Payment Integration",
+        hirezonFeature3: "AI Learning & Experimentation Project",
 
         // Project 3 - CV Website
         cvWebsiteDesc: "Modern, interactive CV website showcasing professional experience and skills. Features bilingual support (EN/NL), dynamic content switching, PDF generation, and responsive design for all devices.",
@@ -242,9 +242,9 @@ const translations = {
         professionalSummary: "Professionele Samenvatting",
         summaryTitle: "Account Manager met een Passie voor Tech & AI",
         summaryText1: "Ik ben een account manager die energie haalt uit het opbouwen van duurzame, langdurige relaties. Ik haal mijn motivatie uit het creëren van win-winsituaties en het verbinden met mensen van over de hele wereld. Dankzij mijn internationale ervaring begrijp en pas ik me gemakkelijk aan verschillende culturen aan, wat me helpt vertrouwen en betekenisvolle samenwerkingen op te bouwen.",
-        summaryText2: "Wat mij onderscheidt is dat ik technologie niet alleen verkoop — <strong>ik begrijp en bouw het ook</strong>. Van AI-aangedreven platforms tot SaaS-producten, ik spreek zowel de taal van business als tech. Dit maakt mij uniek effectief in het vertalen van complexe oplossingen naar echte waarde voor klanten. Ik wil groeien in de tech-industrie waar ik mijn commerciële vaardigheden kan combineren met mijn technische kennis.",
+        summaryText2: "Wat mij onderscheidt is mijn hands-on nieuwsgierigheid voor technologie — <strong>ik bouw er actief mee</strong>. Ik ontwikkel platforms en experimenteer met AI om mijn begrip van moderne technologie te verdiepen: van APIs en full-stack development tot AI-integraties en het oplossen van bugs. Dit geeft mij een authentiek technisch perspectief dat mijn commerciële achtergrond aanvult. Ik wil groeien in de tech-industrie waar ik zakelijk inzicht kan verbinden met echte technische vaardigheden.",
         valueTag1: "Relatieopbouw",
-        valueTag2: "AI & Tech Sales",
+        valueTag2: "AI & Platform Bouwen",
         valueTag3: "Internationale Markten",
         valueTag4: "Business Development",
         valueTag5: "Technische Kennis",
@@ -255,15 +255,15 @@ const translations = {
         competency1Text: "Uitgebreide ervaring in <strong>het opbouwen en onderhouden van langdurige internationale klantrelaties</strong>. Expert in interculturele communicatie en wereldwijde bedrijfsontwikkeling.",
         competency2Title: "Onderhandeling & Contractbeheer",
         competency2Text: "Bedreven in <strong>het onderhandelen over prijzen, het creëren van op maat gemaakte aanbiedingen en het beheren van aanbestedingen</strong>. Ervaring met contractbeheer en strategische dealmaking.",
-        competency3Title: "AI & Tech Sales",
-        competency3Text: "Gepassioneerd over <strong>het verkopen en implementeren van AI-gedreven oplossingen</strong>. Uniek vermogen om technologie diepgaand te begrijpen, producten effectief te demonstreren en technische features te vertalen naar zakelijke waarde voor klanten.",
+        competency3Title: "AI & Platform Ontwikkeling",
+        competency3Text: "Gepassioneerd over <strong>het bouwen en experimenteren met AI-aangedreven platforms</strong>. Hands-on ervaring met het ontwikkelen en itereren van AI-tools, het oplossen van bugs en het ontdekken van hoe moderne AI-technologieën werken — van APIs tot full-stack applicaties.",
         competency4Title: "Technische Kennis",
-        competency4Text: "Hands-on ervaring met <strong>het bouwen van webplatforms, mobiele apps en SaaS-producten</strong>. Deze technische achtergrond stelt mij in staat om de taal te spreken van developers, productteams en technische besluitvormers.",
+        competency4Text: "Hands-on ervaring met <strong>het bouwen van webplatforms, mobiele apps en AI-aangedreven tools</strong>. Deze technische achtergrond stelt mij in staat om de taal te spreken van developers, productteams en technische besluitvormers.",
 
         // Skills & Expertise
         skillsExpertise: "Vaardigheden & Expertise",
         skillCategory1: "Sales & Account Management",
-        skillCategory2: "AI & SaaS Kennis",
+        skillCategory2: "AI & Platform Ontwikkeling",
         skillCategory3: "Communicatie",
         skillCategory4: "Tools & Platforms",
         skillCategory5: "Technische Achtergrond",
@@ -272,7 +272,7 @@ const translations = {
         // Skill tags
         skillTags: [
             ["Business Development", "Verkoopstrategie", "Klantrelatiebeheer", "Onderhandeling", "Contractbeheer"],
-            ["Claude AI / ChatGPT", "AI Productdemo's", "SaaS Verkoopcycli", "Technische Discovery", "Solution Selling"],
+            ["Claude AI / ChatGPT", "AI Platform Bouwen", "Bug Fixing & Debugging", "Technische Discovery", "API Integratie"],
             ["Presentatievaardigheden", "Interculturele Comm.", "Stakeholder Management", "Strategisch Denken"],
             ["CRM (HubSpot, Salesforce)", "Microsoft Office / Google", "Adobe Creative Cloud", "Video Editing"],
             ["React / Node.js", "React Native (Mobiel)", "REST APIs", "Git / GitHub", "Vercel / Railway"],
@@ -448,10 +448,10 @@ const translations = {
         renovibezFeature3: "6 Renovatiecategorieën",
 
         // Project 2 - Hirezon
-        hirezonDesc: "AI-aangedreven vacatureplatform met schaalbare infrastructuur ontworpen voor grote aantallen gebruikers. Bevat geautomatiseerde motivatiebriefgeneratie, sollicitatietracking en data-gedreven inzichten. Momenteel in bètaversie tijdens het afronden van betalingsvoorwaarden.",
+        hirezonDesc: "AI-aangedreven vacatureplatform gebouwd als hands-on leerproject om AI-vaardigheden te trainen en full-stack development te verkennen. Bevat geautomatiseerde motivatiebriefgeneratie, sollicitatietracking en data-gedreven inzichten. Gebouwd om AI-mogelijkheden, APIs en moderne platformarchitectuur beter te begrijpen.",
         hirezonFeature1: "AI Motivatiebrief Generator",
         hirezonFeature2: "Sollicitatie Tracking Dashboard",
-        hirezonFeature3: "Bètaversie - Betalingsintegratie",
+        hirezonFeature3: "AI Leer- & Experimenteerproject",
 
         // Project 3 - CV Website
         cvWebsiteDesc: "Moderne, interactieve CV-website die professionele ervaring en vaardigheden toont. Beschikt over tweetalige ondersteuning (EN/NL), dynamische inhoudswisseling, PDF-generatie en responsive design voor alle apparaten.",
