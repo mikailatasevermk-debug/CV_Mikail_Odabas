@@ -15,6 +15,230 @@ body {
     letter-spacing: 0.01em;
 }
 
+/* Profile Accent Color Variable */
+:root {
+    --profile-accent: #5dade2;
+}
+
+/* Profile Switcher */
+.profile-switcher {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.profile-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.1rem;
+    background: white;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: #334155;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.profile-toggle:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-1px);
+}
+
+.profile-toggle.open {
+    border-color: var(--profile-accent);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.profile-toggle i:first-child {
+    color: var(--profile-accent);
+    font-size: 1.1rem;
+}
+
+.profile-chevron {
+    font-size: 0.7rem;
+    transition: transform 0.3s ease;
+    color: #94a3b8;
+}
+
+.profile-toggle.open .profile-chevron {
+    transform: rotate(180deg);
+}
+
+.profile-dropdown {
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    left: 0;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    padding: 0.5rem;
+    min-width: 240px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    transition: all 0.25s ease;
+}
+
+.profile-dropdown.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.profile-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 2px solid transparent;
+    background: transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    text-align: left;
+    transition: all 0.2s ease;
+    color: #475569;
+}
+
+.profile-btn i:first-child {
+    font-size: 1.1rem;
+    width: 1.5rem;
+    text-align: center;
+    color: #94a3b8;
+    transition: color 0.2s ease;
+}
+
+.profile-btn-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-name {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #1e293b;
+}
+
+.profile-desc {
+    font-size: 0.75rem;
+    color: #94a3b8;
+    margin-top: 1px;
+}
+
+.profile-btn:hover {
+    background: #f1f5f9;
+}
+
+.profile-btn.active {
+    background: linear-gradient(135deg, var(--profile-accent), color-mix(in srgb, var(--profile-accent) 80%, #000));
+    color: white;
+    border-color: var(--profile-accent);
+}
+
+.profile-btn.active i:first-child,
+.profile-btn.active .profile-name,
+.profile-btn.active .profile-desc {
+    color: white;
+}
+
+.profile-btn.active .profile-desc {
+    opacity: 0.85;
+}
+
+/* Skill highlighting for profiles */
+.skill-category {
+    transition: all 0.4s ease;
+}
+
+.skill-category.skill-highlighted {
+    border-color: var(--profile-accent) !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08), inset 0 0 0 1px var(--profile-accent);
+    transform: scale(1.02);
+}
+
+.skill-category.skill-highlighted h3::after {
+    content: '★';
+    margin-left: 0.5rem;
+    color: var(--profile-accent);
+    font-size: 0.85rem;
+}
+
+/* Experience highlighting for profiles */
+.timeline-item {
+    transition: all 0.4s ease;
+}
+
+.timeline-item.experience-highlighted {
+    border-left-color: var(--profile-accent) !important;
+}
+
+.timeline-item.experience-highlighted .timeline-content {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border-color: var(--profile-accent);
+}
+
+.timeline-item.experience-highlighted .job-title::after {
+    content: ' ★';
+    color: var(--profile-accent);
+    font-size: 0.85rem;
+}
+
+/* Section reordering support */
+body[data-profile] .container {
+    display: flex;
+    flex-direction: column;
+}
+
+body[data-profile="general"] .container section {
+    order: unset;
+}
+
+/* Profile active indicator on header */
+body:not([data-profile="general"]) .title {
+    transition: color 0.4s ease;
+}
+
+/* Mobile responsive for profile switcher */
+@media (max-width: 768px) {
+    .profile-switcher {
+        top: 10px;
+        left: 10px;
+    }
+
+    .profile-toggle {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.85rem;
+        border-radius: 10px;
+    }
+
+    .profile-toggle-text {
+        display: none;
+    }
+
+    .profile-chevron {
+        display: none;
+    }
+
+    .profile-dropdown {
+        min-width: 210px;
+    }
+
+    .profile-btn {
+        padding: 0.6rem 0.8rem;
+    }
+
+    .profile-name {
+        font-size: 0.85rem;
+    }
+}
+
 /* Language Switcher */
 .language-switcher {
     position: fixed;

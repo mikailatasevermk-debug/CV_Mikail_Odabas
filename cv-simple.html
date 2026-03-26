@@ -230,6 +230,114 @@
     <script>
         const urlParams = new URLSearchParams(window.location.search);
         const lang = urlParams.get('lang') || 'en';
+        const profileKey = urlParams.get('profile') || 'general';
+
+        // Profile overrides for PDF version
+        const pdfProfiles = {
+            general: {},
+            tech: {
+                en: {
+                    jobTitle: "Tech Sales & AI | Full-Stack Builder",
+                    summaryText1: "I'm a hands-on tech enthusiast who bridges business and engineering. I don't just talk about technology — <strong>I actively build with it</strong>. From developing AI-powered platforms to full-stack web applications, I bring a unique blend of commercial instinct and technical execution.",
+                    summaryText2: "My experience spans React, Node.js, REST APIs, and AI integrations. I've built platforms like Renovibez (contractor matching) and Hirezon (AI job search), demonstrating my ability to take ideas from concept to production. Combined with my international sales background, I understand both the customer and the codebase.",
+                    competencies: [
+                        "AI & Platform Development",
+                        "Full-Stack Web Development (React, Node.js)",
+                        "API Integration & Technical Architecture",
+                        "Technical Sales & Pre-Sales",
+                        "Product & MVP Development",
+                        "Technical Problem Solving & Debugging",
+                        "Cloud Deployment (Vercel, Railway)",
+                        "Cross-Cultural Communication",
+                        "Data-Driven Decision Making"
+                    ]
+                },
+                nl: {
+                    jobTitle: "Tech Sales & AI | Full-Stack Bouwer",
+                    summaryText1: "Ik ben een hands-on tech-enthousiasteling die business en engineering verbindt. Ik praat niet alleen over technologie — <strong>ik bouw er actief mee</strong>. Van het ontwikkelen van AI-aangedreven platforms tot full-stack webapplicaties, ik breng een unieke mix van commercieel instinct en technische uitvoering.",
+                    summaryText2: "Mijn ervaring omvat React, Node.js, REST APIs en AI-integraties. Ik heb platforms gebouwd zoals Renovibez (aannemermatching) en Hirezon (AI vacaturezoeker), wat mijn vermogen aantoont om ideeën van concept tot productie te brengen. Gecombineerd met mijn internationale salesachtergrond begrijp ik zowel de klant als de codebase.",
+                    competencies: [
+                        "AI & Platform Ontwikkeling",
+                        "Full-Stack Webontwikkeling (React, Node.js)",
+                        "API Integratie & Technische Architectuur",
+                        "Technische Sales & Pre-Sales",
+                        "Product & MVP Ontwikkeling",
+                        "Technisch Probleemoplossen & Debugging",
+                        "Cloud Deployment (Vercel, Railway)",
+                        "Interculturele Communicatie",
+                        "Data-Gedreven Besluitvorming"
+                    ]
+                }
+            },
+            sales: {
+                en: {
+                    jobTitle: "Account Manager | Business Development & International Sales",
+                    summaryText1: "I'm an account manager who thrives on building long-lasting, sustainable relationships. I get my energy from creating win–win situations and connecting with people from all over the world. With proven experience managing international accounts across multiple industries, I consistently deliver revenue growth through strategic relationship building.",
+                    summaryText2: "My commercial toolkit spans cold outreach, tender management, contract negotiation, and CRM optimization. At Dipasa Europe I managed international B2B relationships across global markets, and at Billy Security I built the sales pipeline from the ground up. I complement my sales expertise with <strong>tech-savviness and AI tools</strong> to work smarter and stay ahead of the competition.",
+                    competencies: [
+                        "International Account Management",
+                        "Business Development & Sales Strategy",
+                        "Negotiation & Contract Management",
+                        "Sales Pipeline & CRM Management",
+                        "Client Relationship Management",
+                        "Marketing & Campaign Management",
+                        "Cross-Cultural Communication",
+                        "Tender Management",
+                        "Data-Driven Sales Optimization"
+                    ]
+                },
+                nl: {
+                    jobTitle: "Account Manager | Business Development & Internationale Sales",
+                    summaryText1: "Ik ben een account manager die energie haalt uit het opbouwen van duurzame, langdurige relaties. Ik haal mijn motivatie uit het creëren van win-winsituaties en het verbinden met mensen van over de hele wereld. Met bewezen ervaring in het beheren van internationale accounts in meerdere industrieën, lever ik consistent omzetgroei door strategische relatieopbouw.",
+                    summaryText2: "Mijn commerciële toolkit omvat cold outreach, aanbestedingsbeheer, contractonderhandeling en CRM-optimalisatie. Bij Dipasa Europe beheerde ik internationale B2B-relaties over wereldwijde markten, en bij Billy Security bouwde ik de sales pipeline vanaf de grond op. Ik vul mijn salesexpertise aan met <strong>tech-savviness en AI-tools</strong> om slimmer te werken en de concurrentie voor te blijven.",
+                    competencies: [
+                        "International Account Management",
+                        "Business Development & Verkoopstrategie",
+                        "Onderhandeling & Contractbeheer",
+                        "Sales Pipeline & CRM Management",
+                        "Klantrelatiebeheer",
+                        "Marketing & Campagnebeheer",
+                        "Interculturele Communicatie",
+                        "Aanbestedingsbeheer",
+                        "Data-Gedreven Verkoopoptimalisatie"
+                    ]
+                }
+            },
+            government: {
+                en: {
+                    jobTitle: "Policy & Stakeholder Professional | Public Sector & Community",
+                    summaryText1: "I'm a dedicated professional with hands-on experience in the public sector, from healthcare coordination at GGD Flevoland to client support at RIBW Overijssel. I understand how government organizations work and thrive in environments where stakeholder management, policy execution, and community impact intersect.",
+                    summaryText2: "Beyond my public sector work, I've been invited by the <strong>Ministry of Education</strong> to advise on education policy, and I've spent 13+ years leading a youth association focused on community building. My international business background adds a strategic and analytical dimension, while my tech skills enable me to bring innovation and efficiency to traditional organizations.",
+                    competencies: [
+                        "Stakeholder & Community Management",
+                        "Policy Execution & Advisory",
+                        "Public Health & Social Care",
+                        "Digital Innovation in Government",
+                        "Cross-Cultural Communication",
+                        "Project Management & PDCA",
+                        "Data Registration & Reporting",
+                        "Government Collaboration",
+                        "Community Engagement"
+                    ]
+                },
+                nl: {
+                    jobTitle: "Beleid & Stakeholder Professional | Publieke Sector & Gemeenschap",
+                    summaryText1: "Ik ben een toegewijde professional met hands-on ervaring in de publieke sector, van gezondheidscoördinatie bij GGD Flevoland tot cliëntondersteuning bij RIBW Overijssel. Ik begrijp hoe overheidsorganisaties werken en floreer in omgevingen waar stakeholdermanagement, beleidsuitvoering en maatschappelijke impact samenkomen.",
+                    summaryText2: "Naast mijn werk in de publieke sector ben ik uitgenodigd door het <strong>Ministerie van Onderwijs</strong> om te adviseren over onderwijsbeleid, en ik leid al 13+ jaar een jongerenvereniging gericht op gemeenschapsopbouw. Mijn internationale bedrijfsachtergrond voegt een strategische en analytische dimensie toe, terwijl mijn technische vaardigheden mij in staat stellen innovatie en efficiëntie te brengen naar traditionele organisaties.",
+                    competencies: [
+                        "Stakeholder & Gemeenschapsmanagement",
+                        "Beleidsuitvoering & Advisering",
+                        "Publieke Gezondheid & Sociale Zorg",
+                        "Digitale Innovatie bij de Overheid",
+                        "Interculturele Communicatie",
+                        "Projectmanagement & PDCA",
+                        "Data-registratie & Rapportage",
+                        "Overheidsrelaties",
+                        "Gemeenschapsbetrokkenheid"
+                    ]
+                }
+            }
+        };
 
         const t = {
             en: {
@@ -523,7 +631,12 @@
         };
 
         function buildCV() {
-            const tr = t[lang] || t['en'];
+            const tr = Object.assign({}, t[lang] || t['en']);
+            // Apply profile overrides
+            const profileOverrides = pdfProfiles[profileKey];
+            if (profileOverrides && profileOverrides[lang]) {
+                Object.assign(tr, profileOverrides[lang]);
+            }
             document.documentElement.lang = lang;
 
             const jobsHTML = tr.jobs.map(job => `

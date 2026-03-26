@@ -468,6 +468,242 @@ const translations = {
     }
 };
 
+// Profile data - overrides per industry
+const profiles = {
+    general: {
+        // No overrides — uses default translations as-is
+        accentColor: '#5dade2',
+        highlightSkills: [], // no highlighting, all equal
+        sectionOrder: null // default order
+    },
+    tech: {
+        accentColor: '#6366f1',
+        en: {
+            title: "Tech Sales & AI | Full-Stack Builder",
+            summaryTitle: "Tech-Savvy Professional Who Builds With Code & AI",
+            summaryText1: "I'm a hands-on tech enthusiast who bridges business and engineering. I don't just talk about technology — <strong>I actively build with it</strong>. From developing AI-powered platforms to full-stack web applications, I bring a unique blend of commercial instinct and technical execution.",
+            summaryText2: "My experience spans React, Node.js, REST APIs, and AI integrations. I've built platforms like Renovibez (contractor matching) and Hirezon (AI job search), demonstrating my ability to take ideas from concept to production. Combined with my international sales background, I understand both the customer and the codebase.",
+            valueTag1: "Full-Stack Development",
+            valueTag2: "AI & Platform Building",
+            valueTag3: "API Integration",
+            valueTag4: "Technical Problem Solving",
+            valueTag5: "Product Development",
+            competency1Title: "AI & Platform Development",
+            competency1Text: "Passionate about <strong>building and experimenting with AI-powered platforms</strong>. Hands-on experience developing and iterating on AI tools, fixing bugs, and exploring how modern AI technologies work — from APIs to full-stack applications.",
+            competency2Title: "Full-Stack Web Development",
+            competency2Text: "Hands-on experience <strong>building web platforms, mobile apps, and AI-powered tools</strong> using React, Node.js, and modern cloud infrastructure. Comfortable across the entire stack from database to deployment.",
+            competency3Title: "Technical Sales & Pre-Sales",
+            competency3Text: "Unique ability to <strong>bridge technical teams and business stakeholders</strong>. Can demo products, understand technical requirements, and translate complex solutions into business value for clients.",
+            competency4Title: "Product & MVP Development",
+            competency4Text: "Proven track record of <strong>taking ideas from concept to working product</strong>. Built multiple platforms from scratch, managing the full development lifecycle including architecture, development, and deployment."
+        },
+        nl: {
+            title: "Tech Sales & AI | Full-Stack Bouwer",
+            summaryTitle: "Tech-Savvy Professional die Bouwt met Code & AI",
+            summaryText1: "Ik ben een hands-on tech-enthousiasteling die business en engineering verbindt. Ik praat niet alleen over technologie — <strong>ik bouw er actief mee</strong>. Van het ontwikkelen van AI-aangedreven platforms tot full-stack webapplicaties, ik breng een unieke mix van commercieel instinct en technische uitvoering.",
+            summaryText2: "Mijn ervaring omvat React, Node.js, REST APIs en AI-integraties. Ik heb platforms gebouwd zoals Renovibez (aannemermatching) en Hirezon (AI vacaturezoeker), wat mijn vermogen aantoont om ideeën van concept tot productie te brengen. Gecombineerd met mijn internationale salesachtergrond begrijp ik zowel de klant als de codebase.",
+            valueTag1: "Full-Stack Development",
+            valueTag2: "AI & Platform Bouwen",
+            valueTag3: "API Integratie",
+            valueTag4: "Technisch Probleemoplossen",
+            valueTag5: "Productontwikkeling",
+            competency1Title: "AI & Platform Ontwikkeling",
+            competency1Text: "Gepassioneerd over <strong>het bouwen en experimenteren met AI-aangedreven platforms</strong>. Hands-on ervaring met het ontwikkelen en itereren van AI-tools, het oplossen van bugs en het ontdekken van hoe moderne AI-technologieën werken — van APIs tot full-stack applicaties.",
+            competency2Title: "Full-Stack Webontwikkeling",
+            competency2Text: "Hands-on ervaring met <strong>het bouwen van webplatforms, mobiele apps en AI-aangedreven tools</strong> met React, Node.js en moderne cloud-infrastructuur. Comfortabel over de gehele stack van database tot deployment.",
+            competency3Title: "Technische Sales & Pre-Sales",
+            competency3Text: "Uniek vermogen om <strong>technische teams en zakelijke stakeholders te verbinden</strong>. Kan producten demonstreren, technische vereisten begrijpen en complexe oplossingen vertalen naar bedrijfswaarde voor klanten.",
+            competency4Title: "Product & MVP Ontwikkeling",
+            competency4Text: "Bewezen track record in <strong>het brengen van ideeën van concept naar werkend product</strong>. Meerdere platforms vanaf nul gebouwd, met beheer van de volledige ontwikkelingslevenscyclus inclusief architectuur, ontwikkeling en deployment."
+        },
+        highlightSkills: [1, 4, 5], // AI & Platform, Technical Background, Entrepreneurial (0-indexed)
+        featuredExperience: [0, 1], // Dipasa, Billy Security
+        sectionOrder: ['intro', 'expertise', 'featured-projects', 'competencies', 'experience', 'projects', 'education', 'volunteer', 'day-in-life', 'references', 'languages']
+    },
+    sales: {
+        accentColor: '#f59e0b',
+        en: {
+            title: "Account Manager | Business Development & International Sales",
+            summaryTitle: "Results-Driven Account Manager with International Experience",
+            summaryText1: "I'm an account manager who thrives on building long-lasting, sustainable relationships. I get my energy from creating win–win situations and connecting with people from all over the world. With proven experience managing international accounts across multiple industries, I consistently deliver revenue growth through strategic relationship building.",
+            summaryText2: "My commercial toolkit spans cold outreach, tender management, contract negotiation, and CRM optimization. At Dipasa Europe I managed international B2B relationships across global markets, and at Billy Security I built the sales pipeline from the ground up. I complement my sales expertise with <strong>tech-savviness and AI tools</strong> to work smarter and stay ahead of the competition.",
+            valueTag1: "Relationship Building",
+            valueTag2: "Revenue Growth",
+            valueTag3: "International Markets",
+            valueTag4: "Business Development",
+            valueTag5: "Negotiation & Contracts",
+            competency1Title: "International Account Management",
+            competency1Text: "Extensive experience in <strong>building and maintaining long-term international client relationships</strong>. Expert in cross-cultural communication and global business development across multiple industries.",
+            competency2Title: "Negotiation & Contract Management",
+            competency2Text: "Skilled in <strong>negotiating prices, creating tailored offers, and managing tenders</strong>. Experience with contract management and strategic deal-making that consistently delivers results.",
+            competency3Title: "Sales Strategy & Pipeline Management",
+            competency3Text: "Proven track record in <strong>building and managing sales pipelines</strong> from cold outreach to closed deals. Expertise in CRM systems, forecasting, and implementing cross-sell and upsell strategies.",
+            competency4Title: "Marketing & Campaign Management",
+            competency4Text: "Experience in <strong>designing and executing marketing campaigns</strong> for donor acquisition, email marketing, and social media management. Data-driven approach to measuring campaign effectiveness."
+        },
+        nl: {
+            title: "Account Manager | Business Development & Internationale Sales",
+            summaryTitle: "Resultaatgerichte Account Manager met Internationale Ervaring",
+            summaryText1: "Ik ben een account manager die energie haalt uit het opbouwen van duurzame, langdurige relaties. Ik haal mijn motivatie uit het creëren van win-winsituaties en het verbinden met mensen van over de hele wereld. Met bewezen ervaring in het beheren van internationale accounts in meerdere industrieën, lever ik consistent omzetgroei door strategische relatieopbouw.",
+            summaryText2: "Mijn commerciële toolkit omvat cold outreach, aanbestedingsbeheer, contractonderhandeling en CRM-optimalisatie. Bij Dipasa Europe beheerde ik internationale B2B-relaties over wereldwijde markten, en bij Billy Security bouwde ik de sales pipeline vanaf de grond op. Ik vul mijn salesexpertise aan met <strong>tech-savviness en AI-tools</strong> om slimmer te werken en de concurrentie voor te blijven.",
+            valueTag1: "Relatieopbouw",
+            valueTag2: "Omzetgroei",
+            valueTag3: "Internationale Markten",
+            valueTag4: "Business Development",
+            valueTag5: "Onderhandeling & Contracten",
+            competency1Title: "International Account Management",
+            competency1Text: "Uitgebreide ervaring in <strong>het opbouwen en onderhouden van langdurige internationale klantrelaties</strong>. Expert in interculturele communicatie en wereldwijde bedrijfsontwikkeling in meerdere industrieën.",
+            competency2Title: "Onderhandeling & Contractbeheer",
+            competency2Text: "Bedreven in <strong>het onderhandelen over prijzen, het creëren van op maat gemaakte aanbiedingen en het beheren van aanbestedingen</strong>. Ervaring met contractbeheer en strategische dealmaking die consistent resultaten oplevert.",
+            competency3Title: "Verkoopstrategie & Pipeline Management",
+            competency3Text: "Bewezen track record in <strong>het opbouwen en beheren van sales pipelines</strong> van cold outreach tot gesloten deals. Expertise in CRM-systemen, forecasting en het implementeren van cross-sell en upsell strategieën.",
+            competency4Title: "Marketing & Campagnebeheer",
+            competency4Text: "Ervaring in <strong>het ontwerpen en uitvoeren van marketingcampagnes</strong> voor donateurswerving, e-mailmarketing en social media management. Data-gedreven aanpak voor het meten van campagne-effectiviteit."
+        },
+        highlightSkills: [0, 2, 3], // Sales, Communication, Tools
+        featuredExperience: [0, 1, 4], // Dipasa, Billy Security, Islamic Relief
+        sectionOrder: ['intro', 'competencies', 'experience', 'expertise', 'projects', 'education', 'featured-projects', 'volunteer', 'day-in-life', 'references', 'languages']
+    },
+    government: {
+        accentColor: '#10b981',
+        en: {
+            title: "Policy & Stakeholder Professional | Public Sector & Community",
+            summaryTitle: "Community-Oriented Professional with Public Sector Experience",
+            summaryText1: "I'm a dedicated professional with hands-on experience in the public sector, from healthcare coordination at GGD Flevoland to client support at RIBW Overijssel. I understand how government organizations work and thrive in environments where stakeholder management, policy execution, and community impact intersect.",
+            summaryText2: "Beyond my public sector work, I've been invited by the <strong>Ministry of Education</strong> to advise on education policy, and I've spent 13+ years leading a youth association focused on community building. My international business background adds a strategic and analytical dimension, while my tech skills enable me to bring innovation and efficiency to traditional organizations.",
+            valueTag1: "Stakeholder Management",
+            valueTag2: "Policy & Governance",
+            valueTag3: "Community Building",
+            valueTag4: "Public Sector Experience",
+            valueTag5: "Cross-Cultural Communication",
+            competency1Title: "Stakeholder & Community Management",
+            competency1Text: "Extensive experience in <strong>managing diverse stakeholders across government, healthcare, and community organizations</strong>. Skilled at building consensus, coordinating between departments, and ensuring inclusive decision-making.",
+            competency2Title: "Policy Execution & Advisory",
+            competency2Text: "Invited by the <strong>Ministry of Education to advise on education policy</strong>. Experience translating policy objectives into actionable plans and programs within public organizations.",
+            competency3Title: "Public Health & Social Care",
+            competency3Text: "Hands-on experience at <strong>GGD Flevoland (public health) and RIBW Overijssel (social care)</strong>. Understanding of care plans, health protocols, data registration systems, and client-centered approaches.",
+            competency4Title: "Digital Innovation in Government",
+            competency4Text: "Unique combination of <strong>public sector understanding and technical capability</strong>. Experience building digital platforms and using AI tools that can modernize and improve government services and processes."
+        },
+        nl: {
+            title: "Beleid & Stakeholder Professional | Publieke Sector & Gemeenschap",
+            summaryTitle: "Gemeenschapsgerichte Professional met Ervaring in de Publieke Sector",
+            summaryText1: "Ik ben een toegewijde professional met hands-on ervaring in de publieke sector, van gezondheidscoördinatie bij GGD Flevoland tot cliëntondersteuning bij RIBW Overijssel. Ik begrijp hoe overheidsorganisaties werken en floreer in omgevingen waar stakeholdermanagement, beleidsuitvoering en maatschappelijke impact samenkomen.",
+            summaryText2: "Naast mijn werk in de publieke sector ben ik uitgenodigd door het <strong>Ministerie van Onderwijs</strong> om te adviseren over onderwijsbeleid, en ik leid al 13+ jaar een jongerenvereniging gericht op gemeenschapsopbouw. Mijn internationale bedrijfsachtergrond voegt een strategische en analytische dimensie toe, terwijl mijn technische vaardigheden mij in staat stellen innovatie en efficiëntie te brengen naar traditionele organisaties.",
+            valueTag1: "Stakeholder Management",
+            valueTag2: "Beleid & Bestuur",
+            valueTag3: "Gemeenschapsopbouw",
+            valueTag4: "Publieke Sector Ervaring",
+            valueTag5: "Interculturele Communicatie",
+            competency1Title: "Stakeholder & Gemeenschapsmanagement",
+            competency1Text: "Uitgebreide ervaring in <strong>het beheren van diverse stakeholders binnen overheid, gezondheidszorg en maatschappelijke organisaties</strong>. Bedreven in het bouwen van consensus, coördineren tussen afdelingen en het waarborgen van inclusieve besluitvorming.",
+            competency2Title: "Beleidsuitvoering & Advisering",
+            competency2Text: "Uitgenodigd door het <strong>Ministerie van Onderwijs om te adviseren over onderwijsbeleid</strong>. Ervaring met het vertalen van beleidsdoelstellingen naar uitvoerbare plannen en programma's binnen publieke organisaties.",
+            competency3Title: "Publieke Gezondheid & Sociale Zorg",
+            competency3Text: "Hands-on ervaring bij <strong>GGD Flevoland (publieke gezondheid) en RIBW Overijssel (sociale zorg)</strong>. Begrip van zorgplannen, gezondheidsprotocollen, data-registratiesystemen en cliëntgerichte benaderingen.",
+            competency4Title: "Digitale Innovatie bij de Overheid",
+            competency4Text: "Unieke combinatie van <strong>begrip van de publieke sector en technische capaciteit</strong>. Ervaring met het bouwen van digitale platforms en het gebruik van AI-tools die overheidsdiensten en -processen kunnen moderniseren en verbeteren."
+        },
+        highlightSkills: [2, 0, 3], // Communication, Sales (stakeholder), Tools
+        featuredExperience: [2, 3], // RIBW, GGD
+        sectionOrder: ['intro', 'competencies', 'volunteer', 'experience', 'expertise', 'education', 'projects', 'featured-projects', 'day-in-life', 'references', 'languages']
+    }
+};
+
+// Profile switching functionality
+let currentProfile = new URLSearchParams(window.location.search).get('profile') || localStorage.getItem('preferredProfile') || 'general';
+
+function setProfile(profileKey) {
+    currentProfile = profileKey;
+    localStorage.setItem('preferredProfile', profileKey);
+
+    // Update URL without reload
+    const url = new URL(window.location);
+    if (profileKey === 'general') {
+        url.searchParams.delete('profile');
+    } else {
+        url.searchParams.set('profile', profileKey);
+    }
+    window.history.replaceState({}, '', url);
+
+    // Update active button
+    document.querySelectorAll('.profile-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.getAttribute('data-profile') === profileKey);
+    });
+
+    // Apply accent color
+    const profile = profiles[profileKey];
+    document.documentElement.style.setProperty('--profile-accent', profile.accentColor);
+
+    // Set body data attribute for CSS-based section reordering
+    document.body.setAttribute('data-profile', profileKey);
+
+    // Update content with profile overrides
+    updateTranslations();
+
+    // Highlight relevant skills
+    applySkillHighlights(profileKey);
+
+    // Reorder sections
+    applyProfileSectionOrder(profileKey);
+
+    // Close dropdown
+    const dropdown = document.getElementById('profileDropdown');
+    if (dropdown) dropdown.classList.remove('open');
+}
+
+function applySkillHighlights(profileKey) {
+    const profile = profiles[profileKey];
+    const skillCategories = document.querySelectorAll('.skill-category');
+
+    skillCategories.forEach((cat, index) => {
+        cat.classList.remove('skill-highlighted');
+        if (profile.highlightSkills && profile.highlightSkills.includes(index)) {
+            cat.classList.add('skill-highlighted');
+        }
+    });
+
+    // Highlight featured experience
+    const timelineItems = document.querySelectorAll('.timeline-item');
+    timelineItems.forEach((item, index) => {
+        item.classList.remove('experience-highlighted');
+        if (profile.featuredExperience && profile.featuredExperience.includes(index)) {
+            item.classList.add('experience-highlighted');
+        }
+    });
+}
+
+function applyProfileSectionOrder(profileKey) {
+    const profile = profiles[profileKey];
+    const container = document.querySelector('.container');
+    if (!profile.sectionOrder || !container) return;
+
+    const sectionMap = {
+        'intro': '.intro-section',
+        'competencies': '.procurement-focus-section',
+        'expertise': '.expertise-section',
+        'experience': '.experience-section',
+        'projects': '.projects-section',
+        'education': '.education-section',
+        'featured-projects': '.featured-projects-section',
+        'volunteer': '.volunteer-section',
+        'day-in-life': '.day-in-life-section',
+        'references': '.references-section',
+        'languages': '.languages-section'
+    };
+
+    let order = 1;
+    profile.sectionOrder.forEach(key => {
+        const selector = sectionMap[key];
+        if (selector) {
+            const section = container.querySelector(selector);
+            if (section) {
+                section.style.order = order++;
+            }
+        }
+    });
+}
+
 // Language switching functionality
 let currentLanguage = localStorage.getItem('preferredLanguage') || 'en';
 
@@ -488,7 +724,13 @@ function setLanguage(lang) {
 }
 
 function updateTranslations() {
-    const t = translations[currentLanguage];
+    const t = Object.assign({}, translations[currentLanguage]);
+
+    // Apply profile overrides if active
+    const profile = profiles[currentProfile];
+    if (profile && profile[currentLanguage]) {
+        Object.assign(t, profile[currentLanguage]);
+    }
 
     // Header
     document.querySelector('.title').textContent = t.title;
@@ -1237,6 +1479,37 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // Profile switcher interactivity
+    function addProfileSwitcher() {
+        const toggle = document.getElementById('profileToggle');
+        const dropdown = document.getElementById('profileDropdown');
+
+        if (toggle && dropdown) {
+            toggle.addEventListener('click', function(e) {
+                e.stopPropagation();
+                dropdown.classList.toggle('open');
+                toggle.classList.toggle('open');
+            });
+
+            document.addEventListener('click', function(e) {
+                if (!e.target.closest('.profile-switcher')) {
+                    dropdown.classList.remove('open');
+                    toggle.classList.remove('open');
+                }
+            });
+
+            document.querySelectorAll('.profile-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const profileKey = this.getAttribute('data-profile');
+                    setProfile(profileKey);
+                });
+            });
+        }
+
+        // Initialize current profile
+        setProfile(currentProfile);
+    }
+
     // Initialize all interactions
     function init() {
         addTypingAnimationCSS();
@@ -1253,6 +1526,7 @@ document.addEventListener('DOMContentLoaded', function() {
         addReferenceFormHandler();
         addActivityCardInteractions();
         addFloatingCVButton();
+        addProfileSwitcher();
     }
 
     // Start the show
