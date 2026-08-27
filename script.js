@@ -607,6 +607,50 @@ const profiles = {
         highlightSkills: [2, 0, 3], // Communication, Sales (stakeholder), Tools
         featuredExperience: [2, 3], // RIBW, GGD
         sectionOrder: ['intro', 'competencies', 'volunteer', 'experience', 'expertise', 'education', 'projects', 'featured-projects', 'day-in-life', 'references', 'languages']
+    },
+    creative: {
+        accentColor: '#ec4899',
+        en: {
+            title: "Creative Producer | AI-Powered Content, Video & Brand Building",
+            summaryTitle: "Creative Builder Who Takes Ideas From Blank Page to Finished Work",
+            summaryText1: "I'm a creative at heart who doesn't stop at the idea — <strong>I build the whole thing</strong>. Concept, script, visuals, edit, launch. Whether it's a video from scratch, a mascot and brand identity, or a full website, I take ownership of the entire creative pipeline and deliver something people can actually use.",
+            summaryText2: "AI is my creative multiplier. I use it across the whole production process — ideation, scriptwriting, visual generation, editing, and iteration — which lets me move from concept to finished product fast and without a big team. Combined with my marketing background and hands-on development skills, I create work that doesn't just look good, but is built to perform.",
+            valueTag1: "Concept to Delivery",
+            valueTag2: "AI-Powered Creation",
+            valueTag3: "Video Production",
+            valueTag4: "Brand & Mascot Design",
+            valueTag5: "Marketing Campaigns",
+            competency1Title: "End-to-End Video Production",
+            competency1Text: "Creating video content <strong>from raw idea to finished cut</strong> — concept development, scripting, visuals, editing, and delivery. Comfortable owning the entire production process solo, using AI tools to accelerate every stage.",
+            competency2Title: "AI-Powered Creative Production",
+            competency2Text: "Using AI as a genuine creative tool, not a gimmick. Hands-on with <strong>generative AI for visuals, copy, video, and ideation</strong>, integrated into a real production workflow that turns concepts into shippable output at speed.",
+            competency3Title: "Brand Identity & Character Design",
+            competency3Text: "Developing <strong>visual identities, mascots, and brand characters</strong> that give organizations a recognizable personality. From first sketch to consistent brand system across digital and marketing channels.",
+            competency4Title: "Web & Digital Experience Building",
+            competency4Text: "Designing and <strong>building complete websites and digital platforms</strong> — not just mockups. Combining visual design with real front-end development to ship polished, working products like Renovibez and Hirezon."
+        },
+        nl: {
+            title: "Creative Producer | AI-Gedreven Content, Video & Merkbouw",
+            summaryTitle: "Creatieve Bouwer die Ideeën van Leeg Blad naar Eindproduct Brengt",
+            summaryText1: "Ik ben een creatieveling in hart en nieren die niet stopt bij het idee — <strong>ik bouw het hele ding</strong>. Concept, script, beeld, montage, lancering. Of het nu gaat om een video vanaf nul, een mascotte en merkidentiteit, of een volledige website: ik neem eigenaarschap over de gehele creatieve pijplijn en lever iets op waar mensen daadwerkelijk mee verder kunnen.",
+            summaryText2: "AI is mijn creatieve versneller. Ik zet het in door het hele productieproces heen — ideevorming, scriptschrijven, beeldgeneratie, montage en iteratie — waardoor ik snel en zonder groot team van concept naar eindproduct ga. Gecombineerd met mijn marketingachtergrond en hands-on developmentvaardigheden maak ik werk dat er niet alleen goed uitziet, maar ook is gebouwd om te presteren.",
+            valueTag1: "Concept tot Oplevering",
+            valueTag2: "AI-Gedreven Creatie",
+            valueTag3: "Videoproductie",
+            valueTag4: "Merk & Mascotte Design",
+            valueTag5: "Marketingcampagnes",
+            competency1Title: "End-to-End Videoproductie",
+            competency1Text: "Videocontent maken <strong>van ruw idee tot afgemonteerde versie</strong> — conceptontwikkeling, scriptschrijven, beeld, montage en oplevering. Comfortabel met het zelfstandig beheren van het volledige productieproces, met AI-tools om elke fase te versnellen.",
+            competency2Title: "AI-Gedreven Creatieve Productie",
+            competency2Text: "AI inzetten als serieus creatief gereedschap, niet als truc. Hands-on met <strong>generatieve AI voor beeld, copy, video en ideevorming</strong>, geïntegreerd in een echte productieworkflow die concepten razendsnel omzet in bruikbaar eindresultaat.",
+            competency3Title: "Merkidentiteit & Character Design",
+            competency3Text: "Ontwikkelen van <strong>visuele identiteiten, mascottes en merkkarakters</strong> die organisaties een herkenbare persoonlijkheid geven. Van eerste schets tot consistent merksysteem over digitale en marketingkanalen heen.",
+            competency4Title: "Web & Digitale Ervaring Bouwen",
+            competency4Text: "Ontwerpen én <strong>bouwen van complete websites en digitale platforms</strong> — niet alleen mockups. Visueel ontwerp gecombineerd met echte front-end development om verzorgde, werkende producten op te leveren zoals Renovibez en Hirezon."
+        },
+        highlightSkills: [3, 1, 5], // Tools & Platforms (Adobe, Video), AI & Platform Development, Entrepreneurial
+        featuredExperience: [4, 0], // Islamic Relief (Marketing & Comms), Dipasa
+        sectionOrder: ['intro', 'featured-projects', 'competencies', 'expertise', 'experience', 'projects', 'volunteer', 'education', 'day-in-life', 'references', 'languages']
     }
 };
 
